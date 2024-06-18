@@ -11,15 +11,15 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="flex justify-evenly bg-opacity-75 fixed top-0 w-full z-10  bg-white py-3">
+      <div className="flex justify-evenly bg-opacity-90 fixed top-0   w-full   bg-white py-3">
         <div className="flex justify-evenly">
           <NavLink href="https://vnrvjiet.ac.in/">
             <img src="https://vnrvjiet.ac.in/assets/images/Header%20Logo.png" alt="VNR VJIET Logo" />
           </NavLink>
         </div>
-        <div className="flex justify-evenly text-center items-center ">
+        <div className="flex justify-evenly text-center items-center">
 
-              <div ><NavLink  to={'/'}><p className="mx-4 text-[17px] font-semibold text-[#1a1a1a] hover: curosr-pointer hover:text-[#82001a] cursor-pointer">Home</p></NavLink></div>
+              <div className="cursor-pointer" ><NavLink  to={'/'}><p className="mx-4 text-[17px] font-semibold text-[#1a1a1a]  hover:text-[#82001a] cursor-pointer">Home</p></NavLink></div>
 
               <NavLink className="mx-4 text-[17px] font-semibold text-[#1a1a1a] hover:text-[#82001a]" to={'/aboutus'} >About Us</NavLink>
 

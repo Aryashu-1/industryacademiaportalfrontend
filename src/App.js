@@ -73,7 +73,7 @@ function App() {
         element: <FeedbackPage/>,
       },
       {
-        path:'/learning-materials',
+        path:'/resources',
         element: <LearningMaterialsPage/>,
       },
       {
@@ -88,6 +88,7 @@ function App() {
         path:'/privacyandterms',
         element: <PrivacyandTermsPages/>,
       },
+      
       
     ]
     }
