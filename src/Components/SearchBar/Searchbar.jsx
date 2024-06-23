@@ -12,8 +12,8 @@ const SearchBar = (props) => {
 
   useEffect(() => {
     setSearchItems(list.map((item) => ({
-      name: item.name,
-      location: item.location,
+      name: item.courseName,
+      expert: item.expert,
     })));
   }, [list]);
   console.log(searchItems)
@@ -59,7 +59,7 @@ const SearchBar = (props) => {
           <div className="flex items-center rounded-[30px] mt-1 shadow-3xl h-[45px] w-[546px] p-2 border-gray-300 border-[0.5px]">
             <input
               type="text"
-              placeholder="Search for Food, Canteen..."
+              placeholder="Search for Courses, Experts..."
               value={searchQuery}
               onChange={handleChange}
               className="w-full py-3 h-[25px] pl-[20px] focus:outline-none"
@@ -89,23 +89,13 @@ const SearchBar = (props) => {
                 >
                   <div>
                     <strong>{suggestion.name}</strong><br />
-                    <small>{suggestion.location}</small>
+                    <small>{suggestion.expert}</small>
                   </div>
                 </li>
               ))}
             </ul>
           )}
-          <div className="ml-6">
-            <button className="mr-2" onClick={handleOpen}>
-              <img
-                className="h-[42px] w-[42px] drop-shadow-3xl"
-                src="https://t3.ftcdn.net/jpg/03/20/78/84/360_F_320788475_nEiLVViOBewea7taZWqNUR0lJAMTAaSo.jpg"
-                alt=""
-              />
-            </button>
-            <p>Filter</p>
-            {isOpen && <Filter handleClose={handleClose} />}
-          </div>
+
         </div>
       </div>
     </div>

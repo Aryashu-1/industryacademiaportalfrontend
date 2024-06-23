@@ -17,6 +17,22 @@ import ReportsPage from './Pages/ReportsPage/ReportsPage';
 import PrivacyandTermsPages from './Pages/PrivacyandTermsPage/PrivacyandTermsPages';
 import HomePage from './Pages/HomePage/HomePage';
 import AboutUsPage from './Pages/AboutusPage/AboutUsPage';
+import IOMPInternships from './Pages/Internships/Internships/Internships';
+import SummerInternships from './Pages/Internships/SummerInternships/SummerInternships';
+import OtherInternships from './Pages/Internships/OtherInternships/OtherInternships';
+import ActiveMOUs from './Pages/MOUs/ActiveMOUs/ActiveMOUs';
+import IndustryDesignedCourses from './Pages/Courses/IndustryDesignedCourses/IndustryDesignedCourses';
+import CoursesbyIndustryExperts from './Pages/Courses/CoursesbyIndustryExperts/CoursesbyIndustryExperts';
+import IndustrySponsoredLaboratories from './Pages/Laboratories/IndustrySponsoredLaboratories';
+import CertificationCourses from './Pages/CertificationPrograms/CertificationCourses';
+import GuestLecturesbyIndustryExperts from './Pages/LecturesandWorkshops/GuestLecturesbyIndustryExperts';
+import Startups from './Pages/Startups/Startups';
+import ResearchPublications from './Pages/Publications/ResearchPublications';
+import ResearchCenters from './Pages/ResearchCenters/ResearchCenters';
+import IndustryConsultancyProjects from './Pages/ProjectsPage/IndustryConsultancyProjects/IndustryConsultancyProjects';
+import IndustrialVisits from './Pages/Visits/IndustrialVisits';
+import IndustryCollaboratedProjects from './Pages/ProjectsPage/IndustryCollaboratedProjects/IndustryCollaboratedProjects';
+import Internships from './Pages/Internships/Internships/Internships';
 
 function App() {
   const router = createBrowserRouter([
@@ -32,6 +48,65 @@ function App() {
         path:'/login',
         element: <LoginPage/>,
       },
+      {
+        path:'/internships/',
+        element:<Internships/>
+      },
+      {
+        path: '/mous/active-mous',
+        element: <ActiveMOUs />
+      },
+      {
+        path: '/courses/industry-designed',
+        element: <IndustryDesignedCourses />
+      },
+      {
+        path: '/courses/industry-experts',
+        element: <CoursesbyIndustryExperts />
+      },
+      {
+        path: '/laboratories',
+        element: <IndustrySponsoredLaboratories />
+      },
+      {
+        path: '/certifications',
+        element: <CertificationCourses />
+      },
+      {
+        path: '/guest-lectures',
+        element: <GuestLecturesbyIndustryExperts />
+      },
+      {
+        path: '/startups',
+        element: <Startups />
+      },
+      {
+        path: '/publications/research-publications',
+        element: <ResearchPublications />
+      },
+      {
+        path: '/research-centers',
+        element: <ResearchCenters />
+      },
+      {
+        path: 'projects/consultancy-projects',
+        element: <IndustryConsultancyProjects />
+      },
+      {
+        path: 'visits/industrial-visits',
+        element: <IndustrialVisits />
+      },
+      {
+        path: 'projects/collaborated-projects',
+        element: <IndustryCollaboratedProjects />
+      },      
+
+
+
+
+
+
+
       {
         path:'/aboutus',
         element: <AboutUsPage/>,
