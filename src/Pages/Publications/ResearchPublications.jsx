@@ -1,4 +1,6 @@
 import React from 'react'
+import ResearchPaperCard from '../../Components/ResearchPaperCard/ResearchPaperCard';
+import SearchBar from '../../Components/SearchBar/Searchbar';
 
 const ResearchPublications = () => {
   const researchPublications = [
@@ -63,9 +65,59 @@ const ResearchPublications = () => {
         date: "October 2023"
     }
 ];
-
+const latestPublications =[
+    {
+        title: "Software Quality Assurance Practices",
+        authors: "Charles Garcia, STU Networks",
+        publication: "Journal of Software Engineering",
+        date: "August 2023"
+    },
+    {
+        title: "Applications of Machine Learning in Industry",
+        authors: "Patricia Robinson, VWX Dynamics",
+        publication: "Machine Learning Journal",
+        date: "September 2023"
+    },
+    {
+        title: "Project Management in Practice",
+        authors: "Christopher Lee, YZA Group",
+        publication: "Project Management Journal",
+        date: "October 2023"
+    }
+]
   return (
-    <div>ResearchPublications</div>
+    <div>
+    <div className=' mt-1 mb-2'>
+        <div className='flex text-center items-center justify-center w-full'><h1 className='text-[#82001a] font-semibold text-[22px] pb-4'>Research Publications</h1></div>
+        <div className=' w-full items-center'>
+        
+            <div className=' p-3 w-[80%] bg-gray-100 mx-auto   '>
+                <h1 className='text-[#82001a] font-semibold text-left  ml-4 text-[22px] p-4'>Latest Publications</h1>
+                
+                {
+                    latestPublications.map((researchPaper,index)=>(
+                        <ResearchPaperCard researchPaper={researchPaper} key={index}/>
+
+                    ))
+                }
+                
+            </div>
+            <br/>
+            <div className=' p-3 w-[80%] bg-gray-100 mx-auto' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <h1 className='text-[#82001a] font-semibold text-left  ml-4 text-[22px] p-4'>AllPublications</h1>
+                {
+                    researchPublications.map((researchPaper,index)=>(
+                        <ResearchPaperCard researchPaper={researchPaper} key={index}/>
+
+                    ))
+                }
+                
+            </div>
+        </div>
+    </div>
+
+
+</div>
   )
 }
 

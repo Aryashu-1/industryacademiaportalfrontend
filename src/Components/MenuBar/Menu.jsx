@@ -111,7 +111,7 @@ const Menu = () => {
       }
 
       {isActive &&
-        <div className='fixed top-0 left-0  flex w-[100%] h-full animate-[slide-down_0.8s]  '>
+        <div className='fixed top-0 left-0 z-[15] flex w-[100%] h-full animate-[slide-down_0.8s]  '>
           <div className='w-[30%] h-full bg-[#82001a] rounded-r-lg overflow-y-auto' style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             <div className='text-center p-12'>
               <h1 className='text-white font-semibold text-[24px] m-uto'>Industry-Academia Portal</h1>

@@ -12,8 +12,8 @@ const SearchBar = (props) => {
 
   useEffect(() => {
     setSearchItems(list.map((item) => ({
-      name: item.courseName,
-      expert: item.expert,
+      name: item.courseName || item.name ||item.title,
+      expert: item.expert || item.founder.name|| item.authors,
     })));
   }, [list]);
   console.log(searchItems)

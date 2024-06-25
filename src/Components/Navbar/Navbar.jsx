@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center   bg-white py-3 px-4 md:px-10">
+      <div className="flex justify-between items-center fixed top-0 w-full z-30   bg-white py-3 px-4 md:px-10">
         <div className="flex items-center">
-          <NavLink to="https://vnrvjiet.ac.in/">
+          <NavLink to={''}>
             <img
               src="https://vnrvjiet.ac.in/assets/images/Header%20Logo.png"
               alt="VNR VJIET Logo"
@@ -19,7 +19,7 @@ const Navbar = () => {
             />
           </NavLink>
         </div>
-        <div className="hidden md:flex justify-evenly text-center items-center">
+        {/* <div className="hidden md:flex justify-evenly text-center items-center">
           <NavLink to="/" className="mx-4 text-[17px] font-semibold text-[#1a1a1a] hover:text-[#82001a]">
             Home
           </NavLink>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <NavLink to="/login" className="mx-4 text-[17px] font-semibold text-[#1a1a1a] hover:text-[#82001a]">
             Login
           </NavLink>
-        </div>
+        </div> */}
         <div className=" flex items-center">
           <Menu />
         </div>

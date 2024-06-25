@@ -15,12 +15,12 @@
     background-color: black;
     margin-right: 30px;
     margin-bottom: 30px; /* Add margin bottom to create space between profiles */
-    flex-direction: column;
+  
     align-items: left;
     position: relative;
     overflow: hidden;
     width: 350px;
-    height: 18rem;
+    height: 19rem;
     /* border-radius: 16px; */
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
     cursor: pointer;
@@ -37,7 +37,9 @@
     background-color: var(--background);
     transition: .5s;
 }
-
+.profile .profile-image .im2{
+    height: 90%;
+}
 .profile-image img {
     height: 100%;
     width: 100%;
@@ -50,12 +52,13 @@
 }
 
 .profile:hover .profile-image {
-    transform: translateY(-290px);
+    transform: translateY(-390px);
     transition: all .9s ease-in-out;
 }
 
 .profile:hover .profile-bio {
     opacity: 0.9;
+    font-size: 16px;
 }
 
 .profile-name {
@@ -75,12 +78,21 @@
 
 .profile:hover .profile-name {
     background-color: #fff;
+    text-align: center;
+}
+.name{
+    font-size:18px;
+    font-weight: bold;
+    color: #82001a;
 }
 
 .profile-name h2 {
-    margin-bottom: 8px;
+    margin-bottom: 3px;
+    font-size:medium
 }
-
+.expert{
+    text-align: end;
+}
 /* Media Queries for responsiveness */
 
 @media only screen and (max-width: 768px) {
@@ -98,6 +110,6 @@
 
     .profile-name {
         height: auto; /* Allow height to adjust according to content */
-        font-size: smaller;
+        font-size:large;
     }
 }

@@ -10,7 +10,7 @@ const GuestLecturesbyIndustryExperts = () => {
         expert: "John Doe, ABC Corp",
         date: "January 15, 2024",
         images: [
-          "https://www.nasa.gov/sites/default/files/m7.3-flare-zoom.jpg",
+          "https://www.hdwallpapers.in/download/snow_covered_landscape_under_blue_sky_during_sunrise_hd_winter-HD.jpg",
           "https://scx2.b-cdn.net/gfx/news/hires/2015/25-researcherss.jpg"
         ],
         Title: "Modern Web Technologies",
@@ -24,7 +24,7 @@ const GuestLecturesbyIndustryExperts = () => {
         expert: "Jane Smith, XYZ Ltd",
         date: "February 10, 2024",
         images: [
-          "https://www.nasa.gov/sites/default/files/m7.3-flare-zoom.jpg",
+          "https://www.hdwallpapers.in/download/snow_covered_landscape_under_blue_sky_during_sunrise_hd_winter-HD.jpg",
           "https://scx2.b-cdn.net/gfx/news/hires/2015/25-researcherss.jpg"
         ],
         Title: "Data Science Applications",
@@ -38,7 +38,7 @@ const GuestLecturesbyIndustryExperts = () => {
         expert: "Michael Johnson, DEF Tech",
         date: "March 5, 2024",
         images: [
-          "https://www.nasa.gov/sites/default/files/m7.3-flare-zoom.jpg",
+          "https://www.hdwallpapers.in/download/snow_covered_landscape_under_blue_sky_during_sunrise_hd_winter-HD.jpg",
           "https://scx2.b-cdn.net/gfx/news/hires/2015/25-researcherss.jpg"
         ],
         Title: "Digital Marketing Trends",
@@ -52,7 +52,7 @@ const GuestLecturesbyIndustryExperts = () => {
         expert: "Emily Davis, GHI Solutions",
         date: "April 12, 2024",
         images: [
-          "https://www.nasa.gov/sites/default/files/m7.3-flare-zoom.jpg",
+          "https://www.hdwallpapers.in/download/snow_covered_landscape_under_blue_sky_during_sunrise_hd_winter-HD.jpg",
           "https://scx2.b-cdn.net/gfx/news/hires/2015/25-researcherss.jpg"
         ],
         Title: "Cybersecurity Best Practices",
@@ -66,7 +66,7 @@ const GuestLecturesbyIndustryExperts = () => {
         expert: "Robert Brown, JKL Innovations",
         date: "May 18, 2024",
         images: [
-          "https://www.nasa.gov/sites/default/files/m7.3-flare-zoom.jpg",
+          "https://www.hdwallpapers.in/download/snow_covered_landscape_under_blue_sky_during_sunrise_hd_winter-HD.jpg",
           "https://scx2.b-cdn.net/gfx/news/hires/2015/25-researcherss.jpg"
         ],        Title: "Financial Analysis Techniques",
         timings: "10:00 AM - 12:00 PM",
@@ -135,13 +135,12 @@ const upcomingEvents = [
                 }
             </div>
             <h1  className='text-[#82001a] text-[20px]  mt-6 font-semibold'>Past Lectures</h1>
-            <div className='flex flex-wrap'>
-            {
-                  guestLectures.map((lecture,index)=>(
-                    <GuestLectureCard lecture={lecture} key={index}/>
-                  ))
-                   
-                }
+            <div className='flex flex-wrap-row '>
+              <div className="flex flex-wrap -mx-4">
+                {guestLectures.map((lecture, index) => (
+                  <GuestLectureCard lecture={lecture} key={index} />
+                ))}
+              </div>
             </div>
                 
         </div>

@@ -1,61 +1,62 @@
 import React from 'react'
+import SearchBar from '../../Components/SearchBar/Searchbar';
+import StartupCard from '../../Components/StartupCard/StartupCard';
 
 const Startups = () => {
     const startups = [
         {
-            name: "WebInnovate",
-            founders: "John Doe (Student), Jane Smith (Faculty)",
-            description: "Web development and digital solutions"
+          name: "LEVEL",
+          founder: {
+            name: "C. Aswitha Reddy",
+            phone: "9515330333",
+            email: "contact@levelapp.in"
+          },
+          description: "Design and development of Mobile Application using Natural Language Processing. Level is a digital platform for all the teachers and learners out there. Foundation of LEVEL APP, a Topic Learning and Teaching Platform.",
+          logo: "https://levelapp.in/logo.png"
         },
         {
-            name: "DataInsights",
-            founders: "Alice Johnson (Student), Michael Brown (Faculty)",
-            description: "Data analysis and business intelligence services"
+          name: "Red Matter Technologies",
+          founder: {
+            name: "R. Srikanth",
+            phone: "9701818363",
+            email: "contact@redmattertech.com",
+            website: "https://redmattertech.com/",
+            locations: "Hyderabad and Mumbai"
+          },
+          description: "Design and development of Mobile Application using Natural Language Processing. Digital solutions, Technology solutions, Marketing solutions, Design solutions, Digital operations, Branding solutions, Customized products, online Media Management.",
+          logo: "https://redmattertech.com/logo.png"
         },
         {
-            name: "MarketMasters",
-            founders: "Emily White (Student), David Harris (Faculty)",
-            description: "Digital marketing and SEO services"
-        },
-        {
-            name: "SecureNet",
-            founders: "Robert Green (Student), Laura King (Faculty)",
-            description: "Cybersecurity solutions for businesses"
-        },
-        {
-            name: "FinAnalytics",
-            founders: "William Lee (Student), Jennifer Clark (Faculty)",
-            description: "Financial analysis and consulting services"
-        },
-        {
-            name: "NetDesign",
-            founders: "Charles Martinez (Student), Patricia Lewis (Faculty)",
-            description: "Network design and infrastructure services"
-        },
-        {
-            name: "ProcessOptimize",
-            founders: "Thomas Walker (Student), Elizabeth Adams (Faculty)",
-            description: "Business process management and optimization"
-        },
-        {
-            name: "QualityTesters",
-            founders: "Christopher Hall (Student), Sarah Young (Faculty)",
-            description: "Software testing and quality assurance services"
-        },
-        {
-            name: "AI Innovators",
-            founders: "Daniel Allen (Student), Susan Scott (Faculty)",
-            description: "Machine learning and AI solutions"
-        },
-        {
-            name: "ProjectPlanners",
-            founders: "Anthony Harris (Student), Nancy Nelson (Faculty)",
-            description: "Project management consulting and training"
+          name: "VGLUG",
+          founder: {
+            name: "V. Siddhartha",
+            phone: null,
+            email: null,
+            website: "m.me/VGLUG"
+          },
+          description: "Customization of open Source Applications. Founder VGLUG - VNR GNU/Linux Users Group. We are a group of aspiring intellectuals at VNRVJIET in India, passionate & pragmatic in supporting and propagating the noble Free Software Movement.",
+          logo: "https://vglug.in/logo.png"
         }
-    ];
-    
+      ];
+      
   return (
-    <div>Startups</div>
+    <div>
+        <div className=' mt-1 mb-2'>
+            <div className='text-cneter flex justify-center'><h1 className='text-[#82001a] font-semibold text-[22px]'>STARTUP's</h1> </div>
+            <SearchBar data={startups}/>
+            <div className='flex flex-wrap p-3 bg-gray-100 o' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                {
+                    startups.map((startup,index)=>(
+                        <StartupCard startup={startup} key={index}/>
+
+                    ))
+                }
+                
+            </div>
+        </div>
+
+
+    </div>
   )
 }
 
