@@ -1,5 +1,6 @@
 import React from 'react';
 import './GuestLectureCard.css' 
+import { NavLink } from 'react-router-dom';
 const ProfileCard = ({ image1, image2, name, expert,bio }) => {
   return (
     <div className="profile">
@@ -20,8 +21,8 @@ const ProfileCard = ({ image1, image2, name, expert,bio }) => {
 
 const GuestLectureCard = (props) => {
   return (
-    <divc className='w-full md:w-1/2 lg:w-1/3 p-4'>
-
+    <div className='w-full md:w-1/2 lg:w-1/3 p-4'>
+      
       <div className='container '>
             <div className="profile-wrapper">
               <ProfileCard
@@ -33,8 +34,13 @@ const GuestLectureCard = (props) => {
               />
               
             </div>
-          </div>
-    </divc>
+        </div>
+        <NavLink to={':lectureid'} className='flex'>        
+          <h1 className=' text-[22px] font-semibold hover:underline ml-[100px]'>Lecture Name</h1>
+        </NavLink>
+
+
+    </div>
 
   );
 };

@@ -33,6 +33,10 @@ import IndustryConsultancyProjects from './Pages/ProjectsPage/IndustryConsultanc
 import IndustrialVisits from './Pages/Visits/IndustrialVisits';
 import IndustryCollaboratedProjects from './Pages/ProjectsPage/IndustryCollaboratedProjects/IndustryCollaboratedProjects';
 import Internships from './Pages/Internships/Internships/Internships';
+import Demo from './Components/Demo/Demo';
+import InternshipPage from './Pages/InternshipPage/InternshipPage';
+import CertificationPage from './Pages/CertificationPage/CertificationPage';
+import LecturePage from './Pages/LecturePage/LecturePage';
 
 function App() {
   const router = createBrowserRouter([
@@ -51,6 +55,10 @@ function App() {
       {
         path:'/internships/',
         element:<Internships/>
+      },
+      {
+        path:'/internships/:id',
+        element:<InternshipPage/>
       },
       {
         path: '/mous/active-mous',
@@ -73,8 +81,16 @@ function App() {
         element: <CertificationCourses />
       },
       {
+        path:'/certifications/:courseid',
+        element:<CertificationPage/>
+      },
+      {
         path: '/guest-lectures',
         element: <GuestLecturesbyIndustryExperts />
+      },
+      {
+        path:'/guest-lectures/:lectureid',
+        element:<LecturePage/>
       },
       {
         path: '/startups',
@@ -89,17 +105,21 @@ function App() {
         element: <ResearchCenters />
       },
       {
-        path: 'projects/consultancy-projects',
+        path: '/projects/consultancy-projects',
         element: <IndustryConsultancyProjects />
       },
       {
-        path: 'visits/industrial-visits',
+        path: '/visits/industrial-visits',
         element: <IndustrialVisits />
       },
       {
-        path: 'projects/collaborated-projects',
+        path: '/projects/collaborated-projects',
         element: <IndustryCollaboratedProjects />
       },      
+      {
+        path:'/demo',
+        element:<Demo/>
+      },
 
 
 

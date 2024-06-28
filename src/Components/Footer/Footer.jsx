@@ -1,120 +1,25 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
 
+import React from 'react'
+import './Footer.css'
 const Footer = () => {
   return (
-    <div>
-      <div className="flex flex-col md:flex-row">
-        <div className="bg-[#82001a] w-full md:w-[30%] pt-9 pl-5 pb-16">
-          <div>
-            <img src="https://vnrvjiet.ac.in/assets/images/Footer Logo.png" alt="Footer Logo" />
-          </div>
-          <h3 className="text-[#ffcd29] text-2xl mt-9">Address</h3>
-          <p className="text-white font-mono mt-4">
-            Vignana Jyothi Nagar, Pragathi Nagar, Nizampet (S.O), Hyderabad,
-            Telangana, India - 500 090
-          </p>
-          <div className="my-4 bg-white p-2 text-center rounded-full mt-4 hover:bg-[#ffcd29] cursor-pointer w-[150px]">
-            <NavLink to="https://www.google.com/maps?ll=17.538882,78.386293&amp;z=14&amp;t=m&amp;hl=en&amp;gl=IN&amp;mapclient=embed&amp;cid=8864362971979968148" target="_blank">
-              Get Directions
-            </NavLink>
-          </div>
-          <div>
-            <p className="text-white font-mono mt-4">Ph. No. : 91-040-230427 58/59/60</p>
-            <p className="text-white font-mono mt-4">Fax : 91-040-23042761</p>
-            <p className="text-white font-mono mt-4">E-mail : postbox@vnrvjiet.ac.in</p>
-          </div>
+    <div className=' text-black flex '>
+         <footer>
+        <h2>Subscribe & <br/> get special discount</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt neque animi .</p>
+        <div className="input">
+            <input  className='' type="text" placeholder="Enter your Email Address"/>
+            <button>Subscribe</button>
         </div>
-        <div className="bg-[#1a1a1a] w-full md:w-[70%] pb-16">
-          <div className="flex flex-col md:flex-row justify-evenly mt-5">
-            <div className="my-4 border border-white text-white p-2 text-center rounded-full mt-4 hover:bg-[#ffcd29] cursor-pointer w-[180px]">
-              <NavLink to="https://vnrvjiet.ac.in/contact-us" target="_blank">
-                Visit Us
-              </NavLink>
-            </div>
-            <div className="my-4 border border-white text-white p-2 text-center rounded-full mt-4 hover:bg-[#ffcd29] cursor-pointer w-[180px]">
-              <NavLink to="https://vnrvjiet.ac.in/contact-us" target="_blank">
-                Enquire
-              </NavLink>
-            </div>
-            <div className="my-4 border border-white text-white p-2 text-center rounded-full mt-4 hover:bg-[#ffcd29] cursor-pointer w-[180px]">
-              <NavLink to="https://www.google.com/maps?ll=17.538882,78.386293&amp;z=14&amp;t=m&amp;hl=en&amp;gl=IN&amp;mapclient=embed&amp;cid=8864362971979968148" target="_blank">
-                Apply
-              </NavLink>
-            </div>
-          </div>
-          <div className="mt-12 ml-10">
-            <h1 className="text-[20px] text-white">Approvals and Accreditations</h1>
-            <hr className="border-[1.5px] rounded-lg border-white my-1 w-[70px]" />
-            <div className="flex flex-col md:flex-row justify-evenly">
-              <div className="w-full md:w-[33%] flex flex-col space-y-5 text-white pt-6">
-                <a href="https://vnrvjiet.ac.in/aicte-approvals">AICTE Approvals</a>
-                <a href="https://vnrvjiet.ac.in/assets/pdfs/home/AicteMandatory.pdf">AICTE Mandatory Disclosure</a>
-                <a href="https://vnrvjiet.ac.in/accreditation-status">Accreditation Status</a>
-                <a href="https://vnrvjiet.ac.in/assets/pdfs/20-12-23/JNTUH-Affiliation-Order-2023-24.pdf">JNTUH Affiliation Order 2023-24</a>
-                <a href="https://vnrvjiet.ac.in/assets/pdfs/home/ugcu.pdf">UGC Undertaking</a>
-              </div>
-              <div className="w-full md:w-[33%] flex flex-col space-y-5 text-white pt-6">
-                <a href="https://vnrvjiet.ac.in/assets/pdfs/home/NBA-letters.pdf" target="_blank">NBA</a>
-                <a href="https://vnrvjiet.ac.in/naac-details">NAAC</a>
-                <a href="https://vnrvjiet.ac.in/nirf.php/">NIRF</a>
-                <a href="https://vnrvjiet.ac.in/ariia-report">ARIIA Report</a>
-                <a href="https://vnrvjiet.ac.in/qs-i-gauge-rating-2019">QS I-Guage Rating</a>
-              </div>
-              <div className="w-full md:w-[33%] flex flex-col space-y-5 text-white pt-6">
-                <a href="https://vnrvjiet.ac.in/minutes-of-statutory-bodies">Minutes of Statutory Bodies</a>
-                <a href="https://vnrvjiet.ac.in/assets/pdfs/home/dap.xlsx">DAP-DATA-JNTUH</a>
-                <a href="https://vnrvjiet.ac.in/assets/pdfs/home/jntudept.pdf">JNTUH-Principal and Faculty details</a>
-                <a href="https://vnrvjiet.ac.in/teqip-ii-activities">TEQIP-II Activities</a>
-                <a href="https://vnrvjiet.ac.in/assets/pdfs/iqac/TSCOGN80327.pdf" target="_blank">SSR Cycle - 3</a>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 ml-10">
-            <h1 className="text-[20px] text-white">Spotlight</h1>
-            <hr className="border-[1.5px] rounded-lg border-white my-1 w-[40px]" />
-            <div className="flex flex-col md:flex-row justify-evenly">
-              <div className="w-full md:w-[33%] flex flex-col space-y-5 text-white pt-6">
-                <a href="https://vnrvjiet.ac.in/payment">Fee Payment</a>
-                <a href="#">Alumni</a>
-                <a href="#">Hostel</a>
-                <a href="https://vnrvjiet.ac.in/ict">ICT</a>
-              </div>
-              <div className="w-full md:w-[33%] flex flex-col space-y-5 text-white pt-6">
-                <a href="#">Academic Regulations</a>
-                <a href="https://vnrvjiet.ac.in/circulars-and-notices">Circulars &amp; Notices</a>
-                <a href="#">Training &amp; Placement</a>
-              </div>
-              <div className="w-full md:w-[33%] flex flex-col space-y-5 text-white pt-6">
-                <a href="#">Examination Cell</a>
-                <a href="#">Media</a>
-                <a href="#">Events</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-[30%] bg-[#82001a] text-white py-2 text-center md:text-left">
-          <p className="copyright-text">
-            Copyrights ©1995-22 VNRVJIET. All Rights Reserved
-          </p>
-        </div>
-        <div className="w-full md:w-[70%] bg-[#495057] py-2">
-          <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-[40%] flex justify-center items-center">
-              <p className="text-white">Made with Love <span>Socialight</span></p>
-            </div>
-            <div className="w-full md:w-[60%] flex justify-center items-center">
-              <p className="text-white">
-                Careers | Disclaimer | Privacy Policy | Sitemap | <NavLink to="https://vnrvjiet.ac.in/screen-reader" className="text-[#ffffff]">Screen Reader</NavLink>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <ul>
+            <li>7823 <br/> <h6>Years Serving the travel Industry</h6></li>
+            <li>6374 <br/><h6>Global <br/> Patnership</h6> </li>
+            <li>1496 <br/> <h6>Industry Awards since 2022</h6></li>
+            <li>5658 <br/> <h6>Subscribe</h6></li>
+        </ul>
+    </footer>
     </div>
   )
 }
 
-export default Footer;
+export default Footer

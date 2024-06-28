@@ -1,10 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const CourseCard = (props) => {
-    
+            
+
         return (
     <div>
-        <div>
+        <NavLink to={':courseid'} >
             <div className="w-[300px] cursor-pointer bg-white h-[350px] rounded-xl overflow-hidden shadow-xl m-10">
 
                 <div ><img className="rounded-md m-auto mt-3 w-[90%] h-40 " src={props.course.url} alt="Your Image" /></div> 
@@ -21,7 +23,7 @@ const CourseCard = (props) => {
                 
             </div>
             </div>
-        </div>
+        </NavLink>
     </div>
   )
 }

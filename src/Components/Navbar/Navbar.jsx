@@ -8,15 +8,11 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-between items-center fixed top-0 w-full z-30   bg-white py-3 px-4 md:px-10">
+    <div className="">
+      <div className=" bg-zoop flex justify-between  items-center fixed top-0 w-full z-30  py-3 px-4 md:px-10">
         <div className="flex items-center">
           <NavLink to={''}>
-            <img
-              src="https://vnrvjiet.ac.in/assets/images/Header%20Logo.png"
-              alt="VNR VJIET Logo"
-              className="h-10"
-            />
+            <h1 className="text-[23px] text-white">POrtal</h1>
           </NavLink>
         </div>
         {/* <div className="hidden md:flex justify-evenly text-center items-center">

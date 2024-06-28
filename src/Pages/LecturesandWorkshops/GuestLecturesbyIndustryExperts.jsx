@@ -84,7 +84,7 @@ const upcomingEvents = [
         img: "techfest.jpg",
         venue: "Campus Grounds",
         description: "Join us for TechFest 2024, a celebration of technology and innovation.",
-        eventUrl: "/events/techfest-2024"
+        eventUrl:"/events/techfest-2024"
     },
     {
         eventName: "Industry Symposium",
