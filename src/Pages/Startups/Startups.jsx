@@ -42,7 +42,7 @@ const Startups = () => {
   return (
     <div>
         <div className=' mt-1 mb-2'>
-            <div className='text-cneter flex justify-center'><h1 className='text-[#82001a] font-semibold text-[22px]'>STARTUP's</h1> </div>
+            <div className='text-cneter flex justify-center'><h1 className='text-navy-blue font-semibold text-[22px]'>STARTUP's</h1> </div>
             <SearchBar data={startups}/>
             <div className='flex flex-wrap p-3 bg-gray-100 o' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 {

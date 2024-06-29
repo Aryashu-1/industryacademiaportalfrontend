@@ -37,6 +37,16 @@ import Demo from './Components/Demo/Demo';
 import InternshipPage from './Pages/InternshipPage/InternshipPage';
 import CertificationPage from './Pages/CertificationPage/CertificationPage';
 import LecturePage from './Pages/LecturePage/LecturePage';
+import './App.css'
+import './index.css'
+import ResearchPublicationPage from './Pages/ResearchPublicationPage/ResearchPublicationPage';
+
+// src/index.js or src/App.js
+const link = document.createElement('link');
+link.href = 'https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap';
+link.rel = 'stylesheet';
+document.head.appendChild(link);
+
 
 function App() {
   const router = createBrowserRouter([
@@ -100,6 +110,11 @@ function App() {
         path: '/publications/research-publications',
         element: <ResearchPublications />
       },
+      {
+        path: '/publications/research-publications/:paperid',
+        element: <ResearchPublicationPage />
+      }
+      ,
       {
         path: '/research-centers',
         element: <ResearchCenters />

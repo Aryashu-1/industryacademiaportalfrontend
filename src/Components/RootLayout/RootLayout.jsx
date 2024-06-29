@@ -7,7 +7,7 @@ const RootLayout = () => {
   return (
     <div className=''>
         <Navbar/>
-        <div className='h-full mt-[100px] i '  style={{ scrollbarWidth: 'none', msOverflowStyle: 'auto' }}>
+        <div className='h-full mt-[100px] outfit-400 '  style={{ scrollbarWidth: 'none', msOverflowStyle: 'auto' }}>
           <Outlet />
         </div>
         

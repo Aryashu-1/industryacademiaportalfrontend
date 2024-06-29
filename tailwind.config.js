@@ -21,6 +21,9 @@ module.exports = {
           '300': '#b0b0b0',
         },
       },
+      fontFamily: {
+        sans: ['Outfit', 'sans-serif'],
+      },
       dropShadow: {
         '3xl': '0 6px 2px rgba(0, 0, 10, 0.25)'
       },
@@ -40,5 +43,66 @@ module.exports = {
        
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.outfit-100': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 100,
+          fontStyle: 'normal',
+        },
+        '.outfit-200': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 200,
+          fontStyle: 'normal',
+        },
+        '.outfit-300': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 300,
+          fontStyle: 'normal',
+        },
+        '.outfit-400': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 400,
+          fontStyle: 'normal',
+        },
+        '.outfit-500': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 500,
+          fontStyle: 'normal',
+        },
+        '.outfit-600': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 600,
+          fontStyle: 'normal',
+        },
+        '.outfit-700': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 700,
+          fontStyle: 'normal',
+        },
+        '.outfit-800': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 800,
+          fontStyle: 'normal',
+        },
+        '.outfit-900': {
+          fontFamily: '"Outfit", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 900,
+          fontStyle: 'normal',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }
