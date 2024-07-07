@@ -40,6 +40,8 @@ import LecturePage from './Pages/LecturePage/LecturePage';
 import './App.css'
 import './index.css'
 import ResearchPublicationPage from './Pages/ResearchPublicationPage/ResearchPublicationPage';
+import IndustryConsultancyProjectsPage from './Pages/IndustryConsultancyProjectsPage/IndustryConsultancyProjectsPage';
+import IndustryCollaboratedProjectsPage from './Pages/IndustryCollaboratedProjectsPage/IndustryCollaboratedProjectsPage';
 
 // src/index.js or src/App.js
 const link = document.createElement('link');
@@ -124,13 +126,22 @@ function App() {
         element: <IndustryConsultancyProjects />
       },
       {
+        path: '/projects/consultancy-projects/:projectId',
+        element: <IndustryConsultancyProjectsPage />
+
+      },
+      {
         path: '/visits/industrial-visits',
         element: <IndustrialVisits />
       },
       {
         path: '/projects/collaborated-projects',
         element: <IndustryCollaboratedProjects />
-      },      
+      },     
+      {
+        path: '/projects/collaborated-projects/:cprojectId',
+        element: <IndustryCollaboratedProjectsPage />
+      },   
       {
         path:'/demo',
         element:<Demo/>

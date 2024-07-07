@@ -1,0 +1,90 @@
+[{
+    "name": "Social Media Analytics",
+    "imageUrls": ["http://example.com/meta_course1.jpg", "http://example.com/meta_course2.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c00"],
+    "description": "An advanced course on analyzing social media data using AI and machine learning techniques.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c0a", "60d0fe4f5311236168a10c0b"]
+  },
+  {
+    "name": "Ethics in AI",
+    "imageUrls": ["http://example.com/meta_course3.jpg", "http://example.com/meta_course4.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c00"],
+    "description": "Explore ethical considerations in AI development and deployment within social media platforms.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c0a", "60d0fe4f5311236168a10c0b"]
+  }
+  ,
+  {
+    "name": "iOS App Development",
+    "imageUrls": ["http://example.com/apple_course1.jpg", "http://example.com/apple_course2.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c02"],
+    "description": "Learn to develop iOS applications with hands-on projects and guidance from Apple engineers.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c0c", "60d0fe4f5311236168a10c0d"]
+  },
+  {
+    "name": "User Experience Design",
+    "imageUrls": ["http://example.com/apple_course3.jpg", "http://example.com/apple_course4.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c02"],
+    "description": "Master the principles of user experience design with insights from Apple's design experts.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c0c", "60d0fe4f5311236168a10c0d"]
+  }
+,
+{
+    "name": "Cloud Security Fundamentals",
+    "imageUrls": ["http://example.com/amazon_course1.jpg", "http://example.com/amazon_course2.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c04"],
+    "description": "Explore essential concepts in cloud security with practical examples and case studies.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c0e", "60d0fe4f5311236168a10c0f"]
+  },
+  {
+    "name": "Data Analytics in AWS",
+    "imageUrls": ["http://example.com/amazon_course3.jpg", "http://example.com/amazon_course4.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c04"],
+    "description": "Learn data analytics tools and techniques within the AWS ecosystem.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c0e", "60d0fe4f5311236168a10c0f"]
+  }
+,
+{
+    "name": "Content Creation Strategies",
+    "imageUrls": ["http://example.com/netflix_course1.jpg", "http://example.com/netflix_course2.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c06"],
+    "description": "Explore strategies and best practices for creating engaging content on digital platforms.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c10", "60d0fe4f5311236168a10c11"]
+  },
+  {
+    "name": "Streaming Technology Trends",
+    "imageUrls": ["http://example.com/netflix_course3.jpg", "http://example.com/netflix_course4.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c06"],
+    "description": "Stay updated with the latest trends and innovations in streaming technology.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c10", "60d0fe4f5311236168a10c11"]
+  }
+,
+{
+    "name": "Search Engine Algorithms",
+    "imageUrls": ["http://example.com/google_course1.jpg", "http://example.com/google_course2.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c08"],
+    "description": "Learn about the algorithms and methodologies behind Google's search engine.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c12", "60d0fe4f5311236168a10c13"]
+  },
+  {
+    "name": "Machine Learning Applications",
+    "imageUrls": ["http://example.com/google_course3.jpg", "http://example.com/google_course4.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c08"],
+    "description": "Explore practical applications of machine learning techniques in various domains.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c12", "60d0fe4f5311236168a10c13"]
+  }
+,
+{
+    "name": "Agile Project Management",
+    "imageUrls": ["http://example.com/tcs_course1.jpg", "http://example.com/tcs_course2.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c0a"],
+    "description": "Master agile methodologies for effective project management, supported by TCS experts.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c14", "60d0fe4f5311236168a10c15"]
+  },
+  {
+    "name": "Digital Transformation Strategies",
+    "imageUrls": ["http://example.com/tcs_course3.jpg", "http://example.com/tcs_course4.jpg"],
+    "industryPartnerIds": ["60d0fe4f5311236168a10c0a"],
+    "description": "Explore strategies and frameworks for successful digital transformations in organizations.",
+    "facultyPartnerIds": ["60d0fe4f5311236168a10c14", "60d0fe4f5311236168a10c15"]
+  }
+]  

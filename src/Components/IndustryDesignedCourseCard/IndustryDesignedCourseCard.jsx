@@ -3,9 +3,9 @@ import Ipcard from '../Ipcard/Ipcard'
 import Fpcard from '../Fpcard/Fpcard'
 
 const IndustryDesignedCourseCard = (props) => {
-    const [expanded,setTogglexpanded] = useState(false)
+    const [expanded,setExpanded] = useState(false)
     function expansion(){
-        setTogglexpanded(!expanded)
+        setExpanded(!expanded)
     }
   return (
     <div className='p-8 bg-white rounded-lg m-6 shadow-xl '>

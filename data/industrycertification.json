@@ -1,0 +1,51 @@
+[
+    {
+      "name": "AI for Social Media",
+      "industryPartners": ["60d0fe4f5311236168a10c00", "60d0fe4f5311236168a10c0c"],
+      "facultyPartners": ["60d0fe4f5311236168a10c0a", "60d0fe4f5311236168a10c0b"],
+      "description": "This course covers the application of artificial intelligence in enhancing social media platforms, including content recommendation and user engagement.",
+      "imageUrls": ["http://example.com/meta_course1.jpg", "http://example.com/meta_course2.jpg"],
+      "studentIds": ["60d0fe4f5311236168a10a00", "60d0fe4f5311236168a10a01"]
+    },
+    {
+      "name": "Innovative Hardware Design",
+      "industryPartners": ["60d0fe4f5311236168a10c02", "60d0fe4f5311236168a10c0e"],
+      "facultyPartners": ["60d0fe4f5311236168a10c0c", "60d0fe4f5311236168a10c0d"],
+      "description": "Learn the latest techniques and technologies in hardware design and development, in collaboration with Apple.",
+      "imageUrls": ["http://example.com/apple_course1.jpg", "http://example.com/apple_course2.jpg"],
+      "studentIds": ["60d0fe4f5311236168a10a02", "60d0fe4f5311236168a10a03"]
+    },
+    {
+      "name": "Cloud Computing Essentials",
+      "industryPartners": ["60d0fe4f5311236168a10c04", "60d0fe4f5311236168a10c10"],
+      "facultyPartners": ["60d0fe4f5311236168a10c0e", "60d0fe4f5311236168a10c0f"],
+      "description": "This course offers a comprehensive overview of cloud computing, with practical insights from Amazon Web Services.",
+      "imageUrls": ["http://example.com/amazon_course1.jpg", "http://example.com/amazon_course2.jpg"],
+      "studentIds": ["60d0fe4f5311236168a10a04", "60d0fe4f5311236168a10a05"]
+    },
+    {
+      "name": "Advanced Streaming Technology",
+      "industryPartners": ["60d0fe4f5311236168a10c06", "60d0fe4f5311236168a10c12"],
+      "facultyPartners": ["60d0fe4f5311236168a10c10", "60d0fe4f5311236168a10c11"],
+      "description": "Explore the latest advancements in streaming technology and content delivery networks with Netflix experts.",
+      "imageUrls": ["http://example.com/netflix_course1.jpg", "http://example.com/netflix_course2.jpg"],
+      "studentIds": ["60d0fe4f5311236168a10a06", "60d0fe4f5311236168a10a07"]
+    },
+    {
+      "name": "Search Algorithms and Optimization",
+      "industryPartners": ["60d0fe4f5311236168a10c08", "60d0fe4f5311236168a10c14"],
+      "facultyPartners": ["60d0fe4f5311236168a10c12", "60d0fe4f5311236168a10c13"],
+      "description": "Dive into the world of search algorithms and learn how Google optimizes its search engine.",
+      "imageUrls": ["http://example.com/google_course1.jpg", "http://example.com/google_course2.jpg"],
+      "studentIds": ["60d0fe4f5311236168a10a08", "60d0fe4f5311236168a10a09"]
+    },
+    {
+      "name": "IT Services and Business Solutions",
+      "industryPartners": ["60d0fe4f5311236168a10c0a", "60d0fe4f5311236168a10c16"],
+      "facultyPartners": ["60d0fe4f5311236168a10c14", "60d0fe4f5311236168a10c15"],
+      "description": "Gain in-depth knowledge about IT services and business process outsourcing with insights from TCS.",
+      "imageUrls": ["http://example.com/tcs_course1.jpg", "http://example.com/tcs_course2.jpg"],
+      "studentIds": ["60d0fe4f5311236168a10a0a", "60d0fe4f5311236168a10a0b"]
+    }
+  ]
+  

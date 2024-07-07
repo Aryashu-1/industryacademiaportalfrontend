@@ -1,0 +1,123 @@
+[
+    {
+      "name": "AI-Powered Social Media Analysis",
+      "facultyPartners": ["60d0fe4f5311236168a10c0a", "60d0fe4f5311236168a10c0b"],
+      "industryPartners": ["Meta"],
+      "studentIds": ["60d0fe4f5311236168a10a00", "60d0fe4f5311236168a10a01"],
+      "publicationType": "Research Paper",
+      "date": "2023-06-15",
+      "details": "This paper explores the use of AI for analyzing social media trends.",
+      "paperPdfLink": "http://example.com/meta_paper1.pdf"
+    },
+    {
+      "name": "Ethical Considerations in AI Algorithms",
+      "facultyPartners": ["60d0fe4f5311236168a10c0c", "60d0fe4f5311236168a10c0d"],
+      "industryPartners": ["Meta"],
+      "studentIds": ["60d0fe4f5311236168a10a02", "60d0fe4f5311236168a10a03"],
+      "publicationType": "Journal Article",
+      "date": "2024-03-10",
+      "details": "This article discusses ethical challenges in AI algorithm development.",
+      "paperPdfLink": "http://example.com/meta_paper2.pdf"
+    },
+    {
+      "name": "Advancements in iOS Security",
+      "facultyPartners": ["60d0fe4f5311236168a10c0e", "60d0fe4f5311236168a10c0f"],
+      "industryPartners": ["Apple"],
+      "studentIds": ["60d0fe4f5311236168a10a04", "60d0fe4f5311236168a10a05"],
+      "publicationType": "Conference Paper",
+      "date": "2023-08-20",
+      "details": "This paper presents new security enhancements in iOS systems.",
+      "paperPdfLink": "http://example.com/apple_paper1.pdf"
+    },
+    {
+      "name": "User-Centered Design Principles",
+      "facultyPartners": ["60d0fe4f5311236168a10c10", "60d0fe4f5311236168a10c11"],
+      "industryPartners": ["Apple"],
+      "studentIds": ["60d0fe4f5311236168a10a06", "60d0fe4f5311236168a10a07"],
+      "publicationType": "Research Article",
+      "date": "2024-05-05",
+      "details": "This article explores principles of user-centered design in app development.",
+      "paperPdfLink": "http://example.com/apple_paper2.pdf"
+    },
+    {
+      "name": "Data Privacy in Cloud Computing",
+      "facultyPartners": ["60d0fe4f5311236168a10c12", "60d0fe4f5311236168a10c13"],
+      "industryPartners": ["Amazon"],
+      "studentIds": ["60d0fe4f5311236168a10a08", "60d0fe4f5311236168a10a09"],
+      "publicationType": "Conference Paper",
+      "date": "2023-09-25",
+      "details": "This paper discusses strategies for enhancing data privacy in cloud computing.",
+      "paperPdfLink": "http://example.com/amazon_paper1.pdf"
+    },
+    {
+      "name": "Big Data Analytics Frameworks",
+      "facultyPartners": ["60d0fe4f5311236168a10c14", "60d0fe4f5311236168a10c15"],
+      "industryPartners": ["Amazon"],
+      "studentIds": ["60d0fe4f5311236168a10a0a", "60d0fe4f5311236168a10a0b"],
+      "publicationType": "Journal Article",
+      "date": "2024-06-30",
+      "details": "This article explores frameworks for efficient big data analytics in AWS.",
+      "paperPdfLink": "http://example.com/amazon_paper2.pdf"
+    },
+    {
+      "name": "Content Recommendation Systems",
+      "facultyPartners": ["60d0fe4f5311236168a10c16", "60d0fe4f5311236168a10c17"],
+      "industryPartners": ["Netflix"],
+      "studentIds": ["60d0fe4f5311236168a10a0c", "60d0fe4f5311236168a10a0d"],
+      "publicationType": "Research Paper",
+      "date": "2023-10-15",
+      "details": "This paper explores algorithms for personalized content recommendations.",
+      "paperPdfLink": "http://example.com/netflix_paper1.pdf"
+    },
+    {
+      "name": "Streaming Quality Optimization",
+      "facultyPartners": ["60d0fe4f5311236168a10c18", "60d0fe4f5311236168a10c19"],
+      "industryPartners": ["Netflix"],
+      "studentIds": ["60d0fe4f5311236168a10a0e", "60d0fe4f5311236168a10a0f"],
+      "publicationType": "Journal Article",
+      "date": "2024-08-05",
+      "details": "This article discusses techniques for optimizing streaming quality on digital platforms.",
+      "paperPdfLink": "http://example.com/netflix_paper2.pdf"
+    },
+    {
+      "name": "Google Search Algorithm Updates",
+      "facultyPartners": ["60d0fe4f5311236168a10c1a", "60d0fe4f5311236168a10c1b"],
+      "industryPartners": ["Google"],
+      "studentIds": ["60d0fe4f5311236168a10a10", "60d0fe4f5311236168a10a11"],
+      "publicationType": "Conference Paper",
+      "date": "2023-11-20",
+      "details": "This paper analyzes recent updates in Google's search algorithms.",
+      "paperPdfLink": "http://example.com/google_paper1.pdf"
+    },
+    {
+      "name": "Machine Learning Applications in Ad Targeting",
+      "facultyPartners": ["60d0fe4f5311236168a10c1c", "60d0fe4f5311236168a10c1d"],
+      "industryPartners": ["Google"],
+      "studentIds": ["60d0fe4f5311236168a10a12", "60d0fe4f5311236168a10a13"],
+      "publicationType": "Journal Article",
+      "date": "2024-09-10",
+      "details": "This article explores machine learning applications for targeted advertising.",
+      "paperPdfLink": "http://example.com/google_paper2.pdf"
+    },
+    {
+      "name": "Blockchain Applications in Supply Chain Management",
+      "facultyPartners": ["60d0fe4f5311236168a10c1e", "60d0fe4f5311236168a10c1f"],
+      "industryPartners": ["TCS"],
+      "studentIds": ["60d0fe4f5311236168a10a14", "60d0fe4f5311236168a10a15"],
+      "publicationType": "Research Paper",
+      "date": "2023-12-05",
+      "details": "This paper examines blockchain applications for enhancing supply chain transparency.",
+      "paperPdfLink": "http://example.com/tcs_paper1.pdf"
+    },
+    {
+      "name": "Agile Development Practices",
+      "facultyPartners": ["60d0fe4f5311236168a10c20", "60d0fe4f5311236168a10c21"],
+      "industryPartners": ["TCS"],
+      "studentIds": ["60d0fe4f5311236168a10a16", "60d0fe4f5311236168a10a17"],
+      "publicationType": "Conference Paper",
+      "date": "2024-10-20",
+      "details": "This paper discusses agile development practices in software engineering.",
+      "paperPdfLink": "http://example.com/tcs_paper2.pdf"
+    }
+  ]
+  

@@ -1,0 +1,147 @@
+[
+    {
+      "name": "Future of Social Media and AI",
+      "IndustryPartner": "60d0fe4f5311236168a10c00",
+      "date": "2023-07-10",
+      "venue": "Auditorium A",
+      "imageUrls": ["http://example.com/meta_lecture1.jpg", "http://example.com/meta_lecture2.jpg"],
+      "timings": "10:00 AM - 12:00 PM",
+      "description": "An insightful lecture on the future of social media platforms and the integration of AI.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c0a"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a00", "60d0fe4f5311236168a10a01"],
+      "upcoming": false
+    },
+    {
+      "name": "AI in Social Media",
+      "IndustryPartner": "60d0fe4f5311236168a10c00",
+      "date": "2024-08-15",
+      "venue": "Conference Hall B",
+      "imageUrls": ["http://example.com/meta_lecture3.jpg", "http://example.com/meta_lecture4.jpg"],
+      "timings": "2:00 PM - 4:00 PM",
+      "description": "Upcoming lecture focusing on AI advancements and their impact on social media.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c0a"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a00", "60d0fe4f5311236168a10a01"],
+      "upcoming": true
+    },
+    {
+      "name": "Innovations in Hardware Design",
+      "IndustryPartner": "60d0fe4f5311236168a10c02",
+      "date": "2023-05-20",
+      "venue": "Room 101",
+      "imageUrls": ["http://example.com/apple_lecture1.jpg", "http://example.com/apple_lecture2.jpg"],
+      "timings": "11:00 AM - 1:00 PM",
+      "description": "Past lecture covering the latest innovations in hardware design.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c0c"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a02", "60d0fe4f5311236168a10a03"],
+      "upcoming": false
+    },
+    {
+      "name": "The Future of Hardware Technology",
+      "IndustryPartner": "60d0fe4f5311236168a10c02",
+      "date": "2024-09-10",
+      "venue": "Room 102",
+      "imageUrls": ["http://example.com/apple_lecture3.jpg", "http://example.com/apple_lecture4.jpg"],
+      "timings": "3:00 PM - 5:00 PM",
+      "description": "Upcoming lecture on the future trends and technologies in hardware design.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c0c"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a02", "60d0fe4f5311236168a10a03"],
+      "upcoming": true
+    },
+    {
+      "name": "Cloud Computing and Beyond",
+      "IndustryPartner": "60d0fe4f5311236168a10c04",
+      "date": "2023-03-15",
+      "venue": "Hall C",
+      "imageUrls": ["http://example.com/amazon_lecture1.jpg", "http://example.com/amazon_lecture2.jpg"],
+      "timings": "9:00 AM - 11:00 AM",
+      "description": "An extensive lecture on the current and future state of cloud computing.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c0e"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a04", "60d0fe4f5311236168a10a05"],
+      "upcoming": false
+    },
+    {
+      "name": "Advancements in Cloud Computing",
+      "IndustryPartner": "60d0fe4f5311236168a10c04",
+      "date": "2024-10-20",
+      "venue": "Room D",
+      "imageUrls": ["http://example.com/amazon_lecture3.jpg", "http://example.com/amazon_lecture4.jpg"],
+      "timings": "1:00 PM - 3:00 PM",
+      "description": "Upcoming lecture discussing the latest advancements in cloud computing.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c0e"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a04", "60d0fe4f5311236168a10a05"],
+      "upcoming": true
+    },
+    {
+      "name": "Streaming Technologies in 2023",
+      "IndustryPartner": "60d0fe4f5311236168a10c06",
+      "date": "2023-02-25",
+      "venue": "Room E",
+      "imageUrls": ["http://example.com/netflix_lecture1.jpg", "http://example.com/netflix_lecture2.jpg"],
+      "timings": "10:00 AM - 12:00 PM",
+      "description": "A lecture on the current state of streaming technologies and future prospects.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c10"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a06", "60d0fe4f5311236168a10a07"],
+      "upcoming": false
+    },
+    {
+      "name": "Future of Streaming Technology",
+      "IndustryPartner": "60d0fe4f5311236168a10c06",
+      "date": "2024-11-05",
+      "venue": "Room F",
+      "imageUrls": ["http://example.com/netflix_lecture3.jpg", "http://example.com/netflix_lecture4.jpg"],
+      "timings": "2:00 PM - 4:00 PM",
+      "description": "An upcoming lecture discussing the future advancements in streaming technology.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c10"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a06", "60d0fe4f5311236168a10a07"],
+      "upcoming": true
+    },
+    {
+      "name": "Search Engine Optimization Techniques",
+      "IndustryPartner": "60d0fe4f5311236168a10c08",
+      "date": "2023-01-15",
+      "venue": "Auditorium B",
+      "imageUrls": ["http://example.com/google_lecture1.jpg", "http://example.com/google_lecture2.jpg"],
+      "timings": "11:00 AM - 1:00 PM",
+      "description": "A lecture on the latest techniques in search engine optimization.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c12"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a08", "60d0fe4f5311236168a10a09"],
+      "upcoming": false
+    },
+    {
+      "name": "Future of Search Technology",
+      "IndustryPartner": "60d0fe4f5311236168a10c08",
+      "date": "2024-12-10",
+      "venue": "Room G",
+      "imageUrls": ["http://example.com/google_lecture3.jpg", "http://example.com/google_lecture4.jpg"],
+      "timings": "3:00 PM - 5:00 PM",
+      "description": "Upcoming lecture on future trends in search technology.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c12"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a08", "60d0fe4f5311236168a10a09"],
+      "upcoming": true
+    },
+    {
+      "name": "IT Services and Digital Transformation",
+      "IndustryPartner": "60d0fe4f5311236168a10c0a",
+      "date": "2023-04-05",
+      "venue": "Conference Hall A",
+      "imageUrls": ["http://example.com/tcs_lecture1.jpg", "http://example.com/tcs_lecture2.jpg"],
+      "timings": "9:00 AM - 11:00 AM",
+      "description": "A past lecture on IT services and digital transformation.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c14"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a0a", "60d0fe4f5311236168a10a0b"],
+      "upcoming": false
+    },
+    {
+      "name": "Digital Transformation in IT",
+      "IndustryPartner": "60d0fe4f5311236168a10c0a",
+      "date": "2024-07-20",
+      "venue": "Room H",
+      "imageUrls": ["http://example.com/tcs_lecture3.jpg", "http://example.com/tcs_lecture4.jpg"],
+      "timings": "1:00 PM - 3:00 PM",
+      "description": "Upcoming lecture on digital transformation trends in IT services.",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c14"],
+      "studentPartnerIds": ["60d0fe4f5311236168a10a0a", "60d0fe4f5311236168a10a0b"],
+      "upcoming": true
+    }
+  ]
+  

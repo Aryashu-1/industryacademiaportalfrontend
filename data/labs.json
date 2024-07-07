@@ -1,0 +1,94 @@
+[
+    {
+      "department": "Civil Engineering",
+      "location": "Building A, Floor 3",
+      "area": "Structural Engineering",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c41", "60d0fe4f5311236168a10c42"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e61", "60d0fe4f5311236168a10e62"],
+      "description": "The Structural Engineering lab focuses on testing and analysis of building structures.",
+      "imageUrls": ["http://example.com/civil_engineering_lab_image.jpg"]
+    },
+    {
+      "department": "Civil Engineering",
+      "location": "Building B, Floor 2",
+      "area": "Environmental Engineering",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c43", "60d0fe4f5311236168a10c44"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e63", "60d0fe4f5311236168a10e64"],
+      "description": "The Environmental Engineering lab focuses on water treatment and pollution control.",
+      "imageUrls": ["http://example.com/civil_environmental_lab_image.jpg"]
+    },
+    {
+      "department": "Civil Engineering",
+      "location": "Building C, Floor 1",
+      "area": "Transportation Engineering",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c45", "60d0fe4f5311236168a10c46"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e65", "60d0fe4f5311236168a10e66"],
+      "description": "The Transportation Engineering lab focuses on traffic flow and infrastructure planning.",
+      "imageUrls": ["http://example.com/civil_transportation_lab_image.jpg"]
+    },
+    {
+      "department": "Civil Engineering",
+      "location": "Building D, Floor 4",
+      "area": "Geotechnical Engineering",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c47", "60d0fe4f5311236168a10c48"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e67", "60d0fe4f5311236168a10e68"],
+      "description": "The Geotechnical Engineering lab focuses on soil mechanics and foundation engineering.",
+      "imageUrls": ["http://example.com/civil_geotechnical_lab_image.jpg"]
+    },
+    {
+      "department": "Civil Engineering",
+      "location": "Building E, Floor 3",
+      "area": "Construction Management",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c49", "60d0fe4f5311236168a10c4a"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e69", "60d0fe4f5311236168a10e6a"],
+      "description": "The Construction Management lab focuses on project scheduling and cost estimation.",
+      "imageUrls": ["http://example.com/civil_construction_lab_image.jpg"]
+    }
+  ,
+    {
+      "department": "Computer Engineering",
+      "location": "Building F, Floor 2",
+      "area": "Artificial Intelligence",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c4b", "60d0fe4f5311236168a10c4c"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e6b", "60d0fe4f5311236168a10e6c"],
+      "description": "The Artificial Intelligence lab focuses on machine learning algorithms and natural language processing.",
+      "imageUrls": ["http://example.com/computer_ai_lab_image.jpg"]
+    },
+    {
+      "department": "Computer Engineering",
+      "location": "Building G, Floor 3",
+      "area": "Software Engineering",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c4d", "60d0fe4f5311236168a10c4e"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e6d", "60d0fe4f5311236168a10e6e"],
+      "description": "The Software Engineering lab focuses on software design methodologies and quality assurance.",
+      "imageUrls": ["http://example.com/computer_software_lab_image.jpg"]
+    },
+    {
+      "department": "Computer Engineering",
+      "location": "Building H, Floor 4",
+      "area": "Cybersecurity",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c4f", "60d0fe4f5311236168a10c50"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e6f", "60d0fe4f5311236168a10e70"],
+      "description": "The Cybersecurity lab focuses on network security and ethical hacking techniques.",
+      "imageUrls": ["http://example.com/computer_cybersecurity_lab_image.jpg"]
+    },
+    {
+      "department": "Computer Engineering",
+      "location": "Building I, Floor 5",
+      "area": "Internet of Things (IoT)",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c51", "60d0fe4f5311236168a10c52"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e71", "60d0fe4f5311236168a10e72"],
+      "description": "The IoT lab focuses on developing IoT applications and sensor networks.",
+      "imageUrls": ["http://example.com/computer_iot_lab_image.jpg"]
+    },
+    {
+      "department": "Computer Engineering",
+      "location": "Building J, Floor 6",
+      "area": "Big Data Analytics",
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c53", "60d0fe4f5311236168a10c54"],
+      "industryPartnerIds": ["60d0fe4f5311236168a10e73", "60d0fe4f5311236168a10e74"],
+      "description": "The Big Data Analytics lab focuses on processing and analyzing large datasets.",
+      "imageUrls": ["http://example.com/computer_bigdata_lab_image.jpg"]
+    }
+  ]
+    

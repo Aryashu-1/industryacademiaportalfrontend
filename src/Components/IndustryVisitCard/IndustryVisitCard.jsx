@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Ipcard from '../Ipcard/Ipcard'
+import Fpcard from '../Fpcard/Fpcard'
 
 const IndustryVisitCard = (props) => {
     const [expanded,setTogglexpanded] = useState(false)
@@ -37,6 +39,14 @@ const IndustryVisitCard = (props) => {
                 </div>
 
             </div>
+            <h1 className='font-semibold text-navy-blue  m-4 text-[20px]'>Industry Partners : </h1>
+                <div className='m-4 flex flex-wrap'>
+                    <Ipcard/>       
+                </div>
+                <h1 className='font-semibold text-navy-blue  m-4 text-[20px]'>Faculty Partners : </h1>
+                <div className='m-4 flex flex-wrap'>
+                    <Fpcard/>
+                </div>
              <div className='flex justify-end' onClick={expansion}><h1 className='underline '>Read Less...</h1></div>
                 </div>
                

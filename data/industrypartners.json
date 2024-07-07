@@ -1,0 +1,207 @@
+[
+    {
+      "industryId": "60d0fe4f5311236168a10b00",
+      "name": "Meta Partner 1",
+      "details": "Partner with Meta for AI research.",
+      "socialMedia": ["http://twitter.com/metapartner1", "http://linkedin.com/in/metapartner1"],
+      "contact": ["+1-650-123-4567"],
+      "mail": ["metapartner1@meta.com"],
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c00", "60d0fe4f5311236168a10c01"]
+    },
+    {
+      "industryId": "60d0fe4f5311236168a10b02",
+      "name": "Apple Partner 1",
+      "details": "Collaborator with Apple on hardware innovation.",
+      "socialMedia": ["http://twitter.com/applepartner1", "http://linkedin.com/in/applepartner1"],
+      "contact": ["+1-408-123-4567"],
+      "mail": ["applepartner1@apple.com"],
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c02", "60d0fe4f5311236168a10c03"]
+    },
+    {
+      "industryId": "60d0fe4f5311236168a10b04",
+      "name": "Amazon Partner 1",
+      "details": "Partner with Amazon on cloud services.",
+      "socialMedia": ["http://twitter.com/amazonpartner1", "http://linkedin.com/in/amazonpartner1"],
+      "contact": ["+1-206-123-4567"],
+      "mail": ["amazonpartner1@amazon.com"],
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c04", "60d0fe4f5311236168a10c05"]
+    },
+    {
+      "industryId": "60d0fe4f5311236168a10b06",
+      "name": "Netflix Partner 1",
+      "details": "Partner with Netflix on streaming technology.",
+      "socialMedia": ["http://twitter.com/netflixpartner1", "http://linkedin.com/in/netflixpartner1"],
+      "contact": ["+1-408-123-4567"],
+      "mail": ["netflixpartner1@netflix.com"],
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c06", "60d0fe4f5311236168a10c07"]
+    },
+    {
+      "industryId": "60d0fe4f5311236168a10b08",
+      "name": "Google Partner 1",
+      "details": "Partner with Google on search algorithms.",
+      "socialMedia": ["http://twitter.com/googlepartner1", "http://linkedin.com/in/googlepartner1"],
+      "contact": ["+1-650-123-4567"],
+      "mail": ["googlepartner1@google.com"],
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c08", "60d0fe4f5311236168a10c09"]
+    },
+    {
+      "industryId": "60d0fe4f5311236168a10b0a",
+      "name": "TCS Partner 1",
+      "details": "Partner with TCS on IT services.",
+      "socialMedia": ["http://twitter.com/tcspartner1", "http://linkedin.com/in/tcspartner1"],
+      "contact": ["+91-22-12345678"],
+      "mail": ["tcspartner1@tcs.com"],
+      "facultyPartnerIds": ["60d0fe4f5311236168a10c0a", "60d0fe4f5311236168a10c0b"]
+    },
+        {
+          "industryId": "60d0fe4f5311236168a10b00",
+          "name": "Meta Partner 2",
+          "details": "Partner with Meta on virtual reality projects.",
+          "socialMedia": ["http://twitter.com/metapartner2", "http://linkedin.com/in/metapartner2"],
+          "contact": ["+1-650-765-4321"],
+          "mail": ["metapartner2@meta.com"],
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c0c", "60d0fe4f5311236168a10c0d"]
+        },
+        {
+          "industryId": "60d0fe4f5311236168a10b02",
+          "name": "Apple Partner 2",
+          "details": "Collaborator with Apple on software development.",
+          "socialMedia": ["http://twitter.com/applepartner2", "http://linkedin.com/in/applepartner2"],
+          "contact": ["+1-408-765-4321"],
+          "mail": ["applepartner2@apple.com"],
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c0e", "60d0fe4f5311236168a10c0f"]
+        },
+        {
+          "industryId": "60d0fe4f5311236168a10b04",
+          "name": "Amazon Partner 2",
+          "details": "Partner with Amazon on AI and machine learning.",
+          "socialMedia": ["http://twitter.com/amazonpartner2", "http://linkedin.com/in/amazonpartner2"],
+          "contact": ["+1-206-765-4321"],
+          "mail": ["amazonpartner2@amazon.com"],
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c10", "60d0fe4f5311236168a10c11"]
+        },
+        {
+          "industryId": "60d0fe4f5311236168a10b06",
+          "name": "Netflix Partner 2",
+          "details": "Partner with Netflix on content delivery networks.",
+          "socialMedia": ["http://twitter.com/netflixpartner2", "http://linkedin.com/in/netflixpartner2"],
+          "contact": ["+1-408-765-4321"],
+          "mail": ["netflixpartner2@netflix.com"],
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c12", "60d0fe4f5311236168a10c13"]
+        },
+        {
+          "industryId": "60d0fe4f5311236168a10b08",
+          "name": "Google Partner 2",
+          "details": "Partner with Google on cloud computing.",
+          "socialMedia": ["http://twitter.com/googlepartner2", "http://linkedin.com/in/googlepartner2"],
+          "contact": ["+1-650-765-4321"],
+          "mail": ["googlepartner2@google.com"],
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c14", "60d0fe4f5311236168a10c15"]
+        },
+        {
+          "industryId": "60d0fe4f5311236168a10b0a",
+          "name": "TCS Partner 2",
+          "details": "Partner with TCS on business process outsourcing.",
+          "socialMedia": ["http://twitter.com/tcspartner2", "http://linkedin.com/in/tcspartner2"],
+          "contact": ["+91-22-87654321"],
+          "mail": ["tcspartner2@tcs.com"],
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c16", "60d0fe4f5311236168a10c17"]
+        }
+      ,
+      
+        {
+          "department": "Electronics & Telecommunication Engineering",
+          "location": "Building K, Floor 2",
+          "area": "Signal Processing",
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c55", "60d0fe4f5311236168a10c56"],
+          "industryPartnerIds": ["60d0fe4f5311236168a10e75", "60d0fe4f5311236168a10e76"],
+          "description": "The Signal Processing lab focuses on digital signal processing techniques.",
+          "imageUrls": ["http://example.com/electronics_signal_lab_image.jpg"]
+        },
+        {
+          "department": "Electronics & Telecommunication Engineering",
+          "location": "Building L, Floor 3",
+          "area": "Wireless Communication",
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c57", "60d0fe4f5311236168a10c58"],
+          "industryPartnerIds": ["60d0fe4f5311236168a10e77", "60d0fe4f5311236168a10e78"],
+          "description": "The Wireless Communication lab focuses on RF circuits and mobile communication protocols.",
+          "imageUrls": ["http://example.com/electronics_wireless_lab_image.jpg"]
+        },
+        {
+          "department": "Electronics & Telecommunication Engineering",
+          "location": "Building M, Floor 4",
+          "area": "Embedded Systems",
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c59", "60d0fe4f5311236168a10c5a"],
+          "industryPartnerIds": ["60d0fe4f5311236168a10e79", "60d0fe4f5311236168a10e7a"],
+          "description": "The Embedded Systems lab focuses on microcontroller-based system design and programming.",
+          "imageUrls": ["http://example.com/electronics_embedded_lab_image.jpg"]
+        },
+        {
+          "department": "Electronics & Telecommunication Engineering",
+          "location": "Building N, Floor 5",
+          "area": "VLSI Design",
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c5b", "60d0fe4f5311236168a10c5c"],
+          "industryPartnerIds": ["60d0fe4f5311236168a10e7b", "60d0fe4f5311236168a10e7c"],
+          "description": "The VLSI Design lab focuses on designing integrated circuits and FPGA programming.",
+          "imageUrls": ["http://example.com/electronics_vlsi_lab_image.jpg"]
+        },
+        {
+          "department": "Electronics & Telecommunication Engineering",
+          "location": "Building O, Floor 6",
+          "area": "Optical Communication",
+          "facultyPartnerIds": ["60d0fe4f5311236168a10c5d", "60d0fe4f5311236168a10c5e"],
+          "industryPartnerIds": ["60d0fe4f5311236168a10e7d", "60d0fe4f5311236168a10e7e"],
+          "description": "The Optical Communication lab focuses on fiber optics and photonics.",
+          "imageUrls": ["http://example.com/electronics_optical_lab_image.jpg"]
+        },
+        
+            {
+              "department": "Information Technology",
+              "location": "Building P, Floor 2",
+              "area": "Cloud Computing",
+              "facultyPartnerIds": ["60d0fe4f5311236168a10c5f", "60d0fe4f5311236168a10c60"],
+              "industryPartnerIds": ["60d0fe4f5311236168a10e7f", "60d0fe4f5311236168a10e80"],
+              "description": "The Cloud Computing lab focuses on virtualization and distributed computing.",
+              "imageUrls": ["http://example.com/it_cloud_lab_image.jpg"]
+            },
+            {
+              "department": "Information Technology",
+              "location": "Building Q, Floor 3",
+              "area": "Cybersecurity",
+              "facultyPartnerIds": ["60d0fe4f5311236168a10c61", "60d0fe4f5311236168a10c62"],
+              "industryPartnerIds": ["60d0fe4f5311236168a10e81", "60d0fe4f5311236168a10e82"],
+              "description": "The Cybersecurity lab focuses on network security and digital forensics.",
+              "imageUrls": ["http://example.com/it_cybersecurity_lab_image.jpg"]
+            },
+            {
+              "department": "Information Technology",
+              "location": "Building R, Floor 4",
+              "area": "Data Science",
+              "facultyPartnerIds": ["60d0fe4f5311236168a10c63", "60d0fe4f5311236168a10c64"],
+              "industryPartnerIds": ["60d0fe4f5311236168a10e83", "60d0fe4f5311236168a10e84"],
+              "description": "The Data Science lab focuses on analyzing big data and machine learning models.",
+              "imageUrls": ["http://example.com/it_data_science_lab_image.jpg"]
+            },
+            {
+              "department": "Information Technology",
+              "location": "Building S, Floor 5",
+              "area": "Software Development",
+              "facultyPartnerIds": ["60d0fe4f5311236168a10c65", "60d0fe4f5311236168a10c66"],
+              "industryPartnerIds": ["60d0fe4f5311236168a10e85", "60d0fe4f5311236168a10e86"],
+              "description": "The Software Development lab focuses on agile methodologies and software testing.",
+              "imageUrls": ["http://example.com/it_software_dev_lab_image.jpg"]
+            },
+            {
+              "department": "Information Technology",
+              "location": "Building T, Floor 6",
+              "area": "Blockchain Technology",
+              "facultyPartnerIds": ["60d0fe4f5311236168a10c67", "60d0fe4f5311236168a10c68"],
+              "industryPartnerIds": ["60d0fe4f5311236168a10e87", "60d0fe4f5311236168a10e88"],
+              "description": "The Blockchain Technology lab focuses on decentralized applications and smart contracts.",
+              "imageUrls": ["http://example.com/it_blockchain_lab_image.jpg"]
+            }
+          ]
+          
+      
+      
+  
