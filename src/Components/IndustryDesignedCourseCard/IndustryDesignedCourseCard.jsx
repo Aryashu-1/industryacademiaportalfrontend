@@ -1,16 +1,45 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Ipcard from '../Ipcard/Ipcard'
 import Fpcard from '../Fpcard/Fpcard'
+import { IndustryPartnersContext } from '../../Contexts/IndustryPartnersContext'
+import { FacultyContext } from '../../Contexts/FacultyContext'
 
 const IndustryDesignedCourseCard = (props) => {
     const [expanded,setExpanded] = useState(false)
+    const [ip,setip]= useState([])
+    const [fp,setfp]= useState([])
+    const [industryPartners,setIndustryPartners] = useContext(IndustryPartnersContext)
+    const [faculty,setFaculty] = useContext(FacultyContext)
+    console.log(props.course.industryPartnerIds)
+    useEffect(() => {
+        if (props.course.industryPartnerIds) {
+            const matchedIndustryPartners = props.course.industryPartnerIds.map(ipd => 
+                industryPartners.find(inp => inp._id == ipd)
+            ).filter(partner => partner !== undefined); // Filter out undefined values
+            setip(matchedIndustryPartners);
+        }
+    }, [props.course, industryPartners]);
+    
+    
+    useEffect(() => {
+        if (props.course.facultyPartnerIds) {
+            const matchedFacultyPartners = props.course.facultyPartnerIds.map(ipd => 
+                faculty.find(inp => inp._id === ipd)
+            ).filter(faculty => faculty !== undefined); // Filter out undefined values
+            setfp(matchedFacultyPartners);
+        }
+    }, [props.course, faculty]);
     function expansion(){
         setExpanded(!expanded)
     }
+    console.log(ip)
+    console.log(fp)
+    console.log(faculty)
+    console.log(industryPartners)
   return (
     <div className='p-8 bg-white rounded-lg m-6 shadow-xl '>
-        <h1 className='text-[22px] my-6 font-semibold cursor-pointer hover:underline' onClick={expansion}>{props.course.courseName}</h1>
-        <h1 className='text-[22px] mb-3 text-[#82001a]'>{props.course.industryPartner}</h1>
+        <h1 className='text-[22px] my-6 font-semibold cursor-pointer hover:underline' onClick={expansion}>{props.course.name}</h1>
+        <h1 className='text-[22px] mb-3 text-[#82001a]'>{props.course.description}</h1>
         {
             expanded && <div>
                 <div className='flex h-[200px] '>
@@ -32,11 +61,21 @@ const IndustryDesignedCourseCard = (props) => {
         </div>
         <h1 className='font-semibold text-navy-blue  m-4 text-[20px]'>Industry Partners : </h1>
                 <div className='m-4 flex flex-wrap'>
-                    <Ipcard/>       
+                    {
+                        ip.map((i,index)=>(
+                            <Ipcard  key={index} data={i}/>   
+                        ))
+                    }
+                     
                 </div>
                 <h1 className='font-semibold text-navy-blue  m-4 text-[20px]'>Faculty Partners : </h1>
                 <div className='m-4 flex flex-wrap'>
-                    <Fpcard/>
+                    {
+                        fp.map((f,index)=>(
+                            <Fpcard data={f} key={index}/>
+                        ))
+                    }
+                    
                 </div>
             </div>
         }

@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import axios from 'axios';
+import { FacultyContext } from '../../Contexts/FacultyContext';
+import { IndustryPartnersContext } from '../../Contexts/IndustryPartnersContext';
 
 const IndustrySponsoredLaboratories = () => {
   const [department, setDepartment] = useState('Civil Engineering');
+  const [labsData, setLabsData] = useState([]);
+  const [faculty] = useContext(FacultyContext)
+  const [industryPartners] =useContext(IndustryPartnersContext)
 
-  const labData = {
-    "Civil Engineering": [
-      { srNo: 1, location: "Main Building", area: 1500, assistant: "John Doe", incharge: "Dr. Smith", cost: 5000 },
-      { srNo: 2, location: "Annex Building", area: 1200, assistant: "Jane Smith", incharge: "Dr. Johnson", cost: 6000 },
-      { srNo: 3, location: "South Wing", area: 1800, assistant: "Michael Johnson", incharge: "Prof. Brown", cost: 5500 },
-      { srNo: 4, location: "East Wing", area: 1000, assistant: "Emily Davis", incharge: "Dr. Wilson", cost: 4800 },
-      { srNo: 5, location: "West Wing", area: 2000, assistant: "David Lee", incharge: "Prof. Martinez", cost: 6200 }
-    ],
-    "Computer Engineering": [
-      { srNo: 1, location: "Main Building", area: 1300, assistant: "John Smith", incharge: "Dr. White", cost: 5100 },
-      { srNo: 2, location: "Annex Building", area: 1100, assistant: "Jane Doe", incharge: "Dr. Black", cost: 6100 },
-      { srNo: 3, location: "South Wing", area: 1700, assistant: "Michael White", incharge: "Prof. Green", cost: 5400 },
-      { srNo: 4, location: "East Wing", area: 900, assistant: "Emily Green", incharge: "Dr. Red", cost: 4700 },
-      { srNo: 5, location: "West Wing", area: 1800, assistant: "David Black", incharge: "Prof. Yellow", cost: 6300 }
-    ],
-    // Add data for other departments
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("http://localhost:8080/api/labs");
+        setLabsData(res.data);
+      } catch (error) {
+        console.error('Error fetching labs data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const departments = [
     "Civil Engineering",
@@ -29,10 +30,9 @@ const IndustrySponsoredLaboratories = () => {
     "Mechanical Engineering",
     "Engineering & Applied Sciences",
     "AI and DS",
-    "CSE (AI)",
     "CSE (AI & ML)",
     "CSE (IoT, CS & BT)",
-    "CE (Software Engineering)",
+  
     "CSE (Data Science)"
   ];
 
@@ -44,31 +44,46 @@ const IndustrySponsoredLaboratories = () => {
             <th className="border border-gray-800 px-4 py-2">Sr. No.</th>
             <th className="border border-gray-800 px-4 py-2">Lab Location</th>
             <th className="border border-gray-800 px-4 py-2">Area of Lab</th>
-            <th className="border border-gray-800 px-4 py-2">Lab Assistant</th>
-            <th className="border border-gray-800 px-4 py-2">Lab Incharge</th>
-            <th className="border border-gray-800 px-4 py-2">Cost in Rs.</th>
+            <th className="border border-gray-800 px-4 py-2">Industry Partner</th>
+            <th className="border border-gray-800 px-4 py-2">Faculty Incharge</th>
+           
           </tr>
         </thead>
         <tbody>
           {data.map((lab, index) => (
-            <tr key={index} className={(index % 2 === 0) ? 'bg-gray-100' : 'bg-white'}>
-              <td className="border border-gray-800 px-4 py-2">{lab.srNo}</td>
+
+            <tr key={lab._id} className={(index % 2 === 0) ? 'bg-gray-100' : 'bg-white'}>
+              <td className="border border-gray-800 px-4 py-2">{index + 1}</td>
               <td className="border border-gray-800 px-4 py-2">{lab.location}</td>
-              <td className="border border-gray-800 px-4 py-2">{lab.area}</td>
-              <td className="border border-gray-800 px-4 py-2">{lab.assistant}</td>
-              <td className="border border-gray-800 px-4 py-2">{lab.incharge}</td>
-              <td className="border border-gray-800 px-4 py-2">{lab.cost}</td>
+              <td className="border border-gray-800 px-4 py-2">{lab.areaSquareFeet}</td>
+              <td className="border border-gray-800 px-4 py-2">{getPartnerName(lab.industryPartnerIds, industryPartners)}</td>
+              <td className="border border-gray-800 px-4 py-2">{getPartnerName(lab.facultyPartnerIds, faculty)}</td>
+              
             </tr>
+
           ))}
         </tbody>
       </table>
     );
   }
+  
+  function getPartnerName(partnerIds, partners) {
+    return partnerIds.map(id => {
+        console.log(id)
+      const partner = partners.find(p => p._id == id);
+      console.log(partner)
+      return partner ? partner.name : 'N/A';
+    }).join(', ');
+  }
+  
+  console.log(faculty)
+  console.log(industryPartners)
+  const filteredLabsData = labsData.filter(lab => lab.department === department);
 
   return (
     <div>
       <div className='flex p-4'>
-        <div className='w-[25%] bg-[#82001a]'>
+        <div className='w-[25%] bg-navy-blue'>
           <div className='text-center'>
             <h1 className='text-[20px] text-[#ffcd29] mb-6 '>Departments</h1>
           </div>
@@ -81,10 +96,10 @@ const IndustrySponsoredLaboratories = () => {
         </div>
         <div className='w-[75%]'>
           <div className='text-center '>
-            <h1 className='text-[22px] text-[#82001a] font-semibold'>
+            <h1 className='text-[22px] text-navy-blue font-semibold'>
               {department}
             </h1>
-            {generateTable(labData[department])}
+            {generateTable(filteredLabsData)}
           </div>
         </div>
       </div>

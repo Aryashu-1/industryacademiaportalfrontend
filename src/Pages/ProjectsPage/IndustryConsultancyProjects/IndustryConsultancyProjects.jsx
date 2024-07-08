@@ -1,9 +1,27 @@
-import React from 'react'
-import ConsultancyProjectCard from '../../../Components/ConsultancyProjectCard/ConsultancyProjectCard';
+import React, { useEffect, useState } from 'react'
+import CollaboratoryProjectCard from '../../../Components/CollaboratoryProjectCard/CollaboratoryProjectCard';
+import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 const IndustryConsultancyProjects = () => {
- 
-    const consultancyProjects = [
+    const [collaboratedProjectsData, setcollaboratedProjectsData] = useState([])
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const res = await axios.get("http://localhost:8080/api/projects");
+            setcollaboratedProjectsData(res.data);
+  
+          } catch (error) {
+            console.error('Error fetching internships data:', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
+      console.log(collaboratedProjectsData)
+   
+    
+    const collaboratedProjects = [
         {
             projectName: "Financial Risk Analysis",
             client: "JKL Innovations",
@@ -42,18 +60,20 @@ const IndustryConsultancyProjects = () => {
         }
     ];
     
+    
   return (
     <div>
-        <div className=' mt-1 mb-2'>
-        <div className='flex text-center items-center justify-center w-full'><h1 className='text-[#82001a] font-semibold text-[22px] pb-4'>Industry Consultancy Projects</h1></div>
-        <div className=' w-full items-center'>
       
+        <div className=' mt-1 mb-2' >
+        <div className='flex text-center items-center justify-center w-full'><h1 className='text-navy-blue font-semibold text-[22px] pb-4'>Industry Collabarated Projects</h1></div>
+        <div className=' w-full items-center'>
+
             <div className=' p-3 w-[90%] bg-gray-100 mx-auto' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                <h1 className='text-[#82001a] font-semibold text-left  ml-4 text-[22px] p-4'>All Projects</h1>
+
                 <div className='flex flex-wrap w-[1200px]'>
                     {
-                        consultancyProjects.map((project,index)=>(
-                            <ConsultancyProjectCard project={project} key={index}/>
+                        collaboratedProjectsData.map((project,index)=>(
+                            <CollaboratoryProjectCard project={project} key={index}/>
 
                         ))
                     }
@@ -63,6 +83,8 @@ const IndustryConsultancyProjects = () => {
             </div>
         </div>
     </div>
+
+      
     </div>
   )
 }

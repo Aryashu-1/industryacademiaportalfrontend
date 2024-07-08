@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SearchBar from '../../Components/SearchBar/Searchbar';
 import StartupCard from '../../Components/StartupCard/StartupCard';
+import axios from 'axios';
 
 const Startups = () => {
+  const [startupsData, setstartupsData] = useState([])
+  useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const res = await axios.get("http://localhost:8080/api/startups");
+          setstartupsData(res.data);
+
+        } catch (error) {
+          console.error('Error fetching internships data:', error);
+        }
+      };
+  
+      fetchData();
+    }, []);
+    console.log(startupsData)
     const startups = [
         {
           name: "LEVEL",
@@ -42,8 +58,7 @@ const Startups = () => {
   return (
     <div>
         <div className=' mt-1 mb-2'>
-            <div className='text-cneter flex justify-center'><h1 className='text-navy-blue font-semibold text-[22px]'>STARTUP's</h1> </div>
-            <SearchBar data={startups}/>
+            <div className='text-cneter flex justify-center'><h1 className='text-navy-blue mb-4 font-semibold text-[22px]'>STARTUP's</h1> </div>
             <div className='flex flex-wrap p-3 bg-gray-100 o' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 {
                     startups.map((startup,index)=>(

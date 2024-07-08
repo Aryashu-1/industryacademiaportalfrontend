@@ -80,10 +80,7 @@ function App() {
         path: '/courses/industry-designed',
         element: <IndustryDesignedCourses />
       },
-      {
-        path: '/courses/industry-experts',
-        element: <CoursesbyIndustryExperts />
-      },
+     
       {
         path: '/laboratories',
         element: <IndustrySponsoredLaboratories />
@@ -93,7 +90,7 @@ function App() {
         element: <CertificationCourses />
       },
       {
-        path:'/certifications/:courseid',
+        path:'/certifications/:id',
         element:<CertificationPage/>
       },
       {
@@ -113,7 +110,7 @@ function App() {
         element: <ResearchPublications />
       },
       {
-        path: '/publications/research-publications/:paperid',
+        path: '/publications/research-publications/:id',
         element: <ResearchPublicationPage />
       }
       ,
@@ -126,7 +123,7 @@ function App() {
         element: <IndustryConsultancyProjects />
       },
       {
-        path: '/projects/consultancy-projects/:projectId',
+        path: '/projects/consultancy-projects/:id',
         element: <IndustryConsultancyProjectsPage />
 
       },
@@ -139,7 +136,7 @@ function App() {
         element: <IndustryCollaboratedProjects />
       },     
       {
-        path: '/projects/collaborated-projects/:cprojectId',
+        path: '/projects/collaborated-projects/:id',
         element: <IndustryCollaboratedProjectsPage />
       },   
       {

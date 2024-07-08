@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import UpcomingGuestLectureCard from '../../Components/UpcomingGuestLectureCard/UpcomingGuestLectureCard';
 import SearchBar from '../../Components/SearchBar/Searchbar';
 import GuestLectureCard from '../../Components/GuestLectureCard/GuestLectureCard';
-
+import axios from 'axios';
 const GuestLecturesbyIndustryExperts = () => {
+  const [guestLecturesData, setguestLecturesData] = useState([])
+  useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const res = await axios.get("http://localhost:8080/api/guest-lectures");
+          setguestLecturesData(res.data);
+
+        } catch (error) {
+          console.error('Error fetching internships data:', error);
+        }
+      };
+  
+      fetchData();
+    }, []);
+    console.log(guestLecturesData)
   const guestLectures = [
     {
         topic: "Modern Web Technologies",

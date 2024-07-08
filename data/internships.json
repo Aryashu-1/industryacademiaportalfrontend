@@ -5,31 +5,15 @@
       "workFromHome": true,
       "companyDescription": "Meta AI Research focuses on advancing artificial intelligence technologies.",
       "jobDescription": "Develop and implement AI algorithms for social media analysis.",
-      "urlImage": "http://example.com/meta_ai_research_image.jpg",
+      "urlImage": "https://insidehpc.com/wp-content/uploads/2021/12/Meta-logo.png",
       "location": "Remote",
       "role": "AI Research Intern",
       "fullTime": false,
-      "companyLogo": "http://example.com/meta_logo.png",
+      "companyLogo": "https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png",
       "category": "Technology",
-      "studentIds": ["60d0fe4f5311236168a10a18", "60d0fe4f5311236168a10a19"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b01", "60d0fe4f5311236168a10b02"],
+      "studentIds": ["668a6cafa254f2e8916fb3a0", "668a6cafa254f2e8916fb3a1"],
+      "industryPartnerIds": ["668a793da254f2e8916fb3d5", "668a793da254f2e8916fb3db"],
       "facultyPartnerIds": ["60d0fe4f5311236168a10c22", "60d0fe4f5311236168a10c23"]
-    },
-    {
-      "companyName": "Meta Social Media Insights",
-      "stipend": 20000,
-      "workFromHome": true,
-      "companyDescription": "Meta Social Media Insights analyzes trends and user behavior across social platforms.",
-      "jobDescription": "Analyze social media data and provide insights using statistical tools.",
-      "urlImage": "http://example.com/meta_social_insights_image.jpg",
-      "location": "Remote",
-      "role": "Social Media Analyst Intern",
-      "fullTime": false,
-      "companyLogo": "http://example.com/meta_logo.png",
-      "category": "Marketing",
-      "studentIds": ["60d0fe4f5311236168a10a1a", "60d0fe4f5311236168a10a1b"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b03", "60d0fe4f5311236168a10b04"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c24", "60d0fe4f5311236168a10c25"]
     }
   ,
   
@@ -39,33 +23,17 @@
       "workFromHome": false,
       "companyDescription": "Apple Inc. designs and manufactures consumer electronics and software products.",
       "jobDescription": "Develop iOS applications and assist in app testing and debugging.",
-      "urlImage": "http://example.com/apple_inc_image.jpg",
+      "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYHD3mEzwkSgxHNJ98aKumNYs8bPl03b8GYw&s",
       "location": "Cupertino, CA",
       "role": "Software Engineering Intern",
       "fullTime": false,
-      "companyLogo": "http://example.com/apple_logo.png",
+      "companyLogo": "https://i.pinimg.com/736x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg",
       "category": "Technology",
-      "studentIds": ["60d0fe4f5311236168a10a1c", "60d0fe4f5311236168a10a1d"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b05", "60d0fe4f5311236168a10b06"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c26", "60d0fe4f5311236168a10c27"]
+      "studentIds": ["668a6cafa254f2e8916fb3a2", "668a6cafa254f2e8916fb3a3"],
+      "industryPartnerIds": ["668a793da254f2e8916fb3d6", "668a793da254f2e8916fb3dc"],
+      "facultyPartners": ["668a7034a254f2e8916fb3bb", "668a7034a254f2e8916fb3bc"]
     },
-    {
-      "companyName": "Apple AI Research",
-      "stipend": 35000,
-      "workFromHome": false,
-      "companyDescription": "Apple AI Research focuses on developing AI technologies for Apple products.",
-      "jobDescription": "Research and implement machine learning algorithms for improving Siri functionalities.",
-      "urlImage": "http://example.com/apple_ai_research_image.jpg",
-      "location": "Cupertino, CA",
-      "role": "AI Research Intern",
-      "fullTime": false,
-      "companyLogo": "http://example.com/apple_logo.png",
-      "category": "Technology",
-      "studentIds": ["60d0fe4f5311236168a10a1e", "60d0fe4f5311236168a10a1f"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b07", "60d0fe4f5311236168a10b08"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c28", "60d0fe4f5311236168a10c29"]
-    }
-  ,
+   
   
     {
       "companyName": "Amazon Web Services",
@@ -73,33 +41,17 @@
       "workFromHome": true,
       "companyDescription": "Amazon Web Services provides on-demand cloud computing platforms and APIs to individuals, companies, and governments.",
       "jobDescription": "Develop cloud applications and assist in infrastructure management.",
-      "urlImage": "http://example.com/aws_image.jpg",
+      "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSR4sWGfuHCmHvYGFZVQvgRWI1CGQMSVVN2g&s",
       "location": "Remote",
       "role": "Cloud Development Intern",
       "fullTime": false,
-      "companyLogo": "http://example.com/aws_logo.png",
+      "companyLogo": "https://static.vecteezy.com/system/resources/previews/019/136/322/non_2x/amazon-logo-amazon-icon-free-free-vector.jpg",
       "category": "Technology",
-      "studentIds": ["60d0fe4f5311236168a10a20", "60d0fe4f5311236168a10a21"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b09", "60d0fe4f5311236168a10b0a"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c2a", "60d0fe4f5311236168a10c2b"]
+      "studentIds": ["668a6cafa254f2e8916fb3a4", "668a6cafa254f2e8916fb3a5"],
+      "industryPartnerIds": ["668a793da254f2e8916fb3dc", "668a793da254f2e8916fb3d7"],
+     "facultyPartners": ["668a7034a254f2e8916fb3bd", "668a7034a254f2e8916fb3be"]
     },
-    {
-      "companyName": "Amazon Marketing Solutions",
-      "stipend": 25000,
-      "workFromHome": true,
-      "companyDescription": "Amazon Marketing Solutions specializes in digital marketing strategies and analytics.",
-      "jobDescription": "Analyze marketing campaigns and assist in data-driven decision making.",
-      "urlImage": "http://example.com/amazon_marketing_image.jpg",
-      "location": "Remote",
-      "role": "Marketing Intern",
-      "fullTime": false,
-      "companyLogo": "http://example.com/aws_logo.png",
-      "category": "Marketing",
-      "studentIds": ["60d0fe4f5311236168a10a22", "60d0fe4f5311236168a10a23"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b0b", "60d0fe4f5311236168a10b0c"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c2c", "60d0fe4f5311236168a10c2d"]
-    }
-  ,
+  
   
     {
       "companyName": "Netflix Studios",
@@ -107,33 +59,17 @@
       "workFromHome": false,
       "companyDescription": "Netflix Studios produces and distributes TV series and films.",
       "jobDescription": "Assist in content production and post-production activities.",
-      "urlImage": "http://example.com/netflix_studios_image.jpg",
+      "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdAsOfQAlCWqVI7AdcO7a5HPwSwS_PmBv4A&s",
       "location": "Los Angeles, CA",
       "role": "Film Production Intern",
       "fullTime": false,
-      "companyLogo": "http://example.com/netflix_logo.png",
+      "companyLogo": "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940",
       "category": "Entertainment",
-      "studentIds": ["60d0fe4f5311236168a10a24", "60d0fe4f5311236168a10a25"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b0d", "60d0fe4f5311236168a10b0e"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c2e", "60d0fe4f5311236168a10c2f"]
+      "studentIds": ["668a6cafa254f2e8916fb3a6", "668a6cafa254f2e8916fb3a7"],
+      "industryPartnerIds": ["668a793da254f2e8916fb3dd", "668a793da254f2e8916fb3d8"],
+      "facultyPartners": ["668a7034a254f2e8916fb3bf", "668a7034a254f2e8916fb3c0"]
     },
-    {
-      "companyName": "Netflix Data Science",
-      "stipend": 30000,
-      "workFromHome": true,
-      "companyDescription": "Netflix Data Science team focuses on leveraging data for enhancing viewer experience.",
-      "jobDescription": "Analyze viewer data and assist in developing recommendation algorithms.",
-      "urlImage": "http://example.com/netflix_data_science_image.jpg",
-      "location": "Remote",
-      "role": "Data Science Intern",
-      "fullTime": false,
-      "companyLogo": "http://example.com/netflix_logo.png",
-      "category": "Technology",
-      "studentIds": ["60d0fe4f5311236168a10a26", "60d0fe4f5311236168a10a27"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b0f", "60d0fe4f5311236168a10b10"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c30", "60d0fe4f5311236168a10c31"]
-    }
-  ,
+  
   
     {
       "companyName": "Google Cloud",
@@ -141,31 +77,15 @@
       "workFromHome": true,
       "companyDescription": "Google Cloud offers cloud computing and storage solutions.",
       "jobDescription": "Develop applications using Google Cloud Platform services and APIs.",
-      "urlImage": "http://example.com/google_cloud_image.jpg",
+      "urlImage": "",
       "location": "Remote",
       "role": "Cloud Development Intern",
       "fullTime": false,
-      "companyLogo": "http://example.com/google_logo.png",
+      "companyLogo": "",
       "category": "Technology",
-      "studentIds": ["60d0fe4f5311236168a10a28", "60d0fe4f5311236168a10a29"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b11", "60d0fe4f5311236168a10b12"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c32", "60d0fe4f5311236168a10c33"]
-    },
-    {
-      "companyName": "Google AI Research",
-      "stipend": 38000,
-      "workFromHome": true,
-      "companyDescription": "Google AI Research focuses on advancing AI technologies.",
-      "jobDescription": "Research and develop AI algorithms for improving Google products.",
-      "urlImage": "http://example.com/google_ai_research_image.jpg",
-      "location": "Remote",
-      "role": "AI Research Intern",
-      "fullTime": false,
-      "companyLogo": "http://example.com/google_logo.png",
-      "category": "Technology",
-      "studentIds": ["60d0fe4f5311236168a10a2a", "60d0fe4f5311236168a10a2b"],
-      "industryPartnerIds": ["60d0fe4f5311236168a10b13", "60d0fe4f5311236168a10b14"],
-      "facultyPartnerIds": ["60d0fe4f5311236168a10c34", "60d0fe4f5311236168a10c35"]
+      "studentIds": ["668a6cafa254f2e8916fb3a8", "668a6cafa254f2e8916fb3a9"],
+      "industryPartnerIds": ["668a793da254f2e8916fb3d9", "668a793da254f2e8916fb3de"],
+      "facultyPartners": ["668a7034a254f2e8916fb3c2", "668a7034a254f2e8916fb3c1"]
     }
   ]
   

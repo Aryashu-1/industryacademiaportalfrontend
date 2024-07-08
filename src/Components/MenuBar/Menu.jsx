@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
   const menuItems = [
@@ -33,12 +34,7 @@ const Menu = () => {
         { label: 'Certification Courses', path: '/certifications' }
       ]
     },
-    {
-      label: 'Guest Lectures',
-      items: [
-        { label: 'Guest Lectures by Industry Experts', path: '/guest-lectures' }
-      ]
-    },
+    
     {
       label: 'Startups',
       items: [
@@ -73,6 +69,12 @@ const Menu = () => {
       label: 'Collaborated Projects',
       items: [
         { label: 'Industry Collaborated Projects', path: '/projects/collaborated-projects' }
+      ]
+    },
+    {
+      label: 'Guest Lectures',
+      items: [
+        { label: 'Guest Lectures by Industry Experts', path: '/guest-lectures' }
       ]
     }
   ];
@@ -134,7 +136,7 @@ const Menu = () => {
                       {item.items.map((subItem, subIdx) => (
                         <div key={subIdx} className='py-1'>
                           <hr className="border-1 rounded-lg mt-4 border-gray-400 my-1 w-3/4 text-sm" />
-                          <a href={subItem.path} className='text-gray-200'>{subItem.label}</a>
+                          <NavLink to={subItem.path} className='text-gray-200'>{subItem.label}</NavLink>
                         </div>
                       ))}
                     </div>

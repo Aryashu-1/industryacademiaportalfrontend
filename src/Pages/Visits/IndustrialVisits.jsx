@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import UpcomingIndustryVisitCard from '../../Components/UpcomingIndustryVisitCard/UpcomingIndustryVisitCard';
 import IndustryVisitCard from '../../Components/IndustryVisitCard/IndustryVisitCard';
+import axios from 'axios';
 
 const IndustrialVisits = () => {
+    const [industryvisitsData, setindustryvisitsData] = useState([])
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const res = await axios.get("http://localhost:8080/api/visits");
+            setindustryvisitsData(res.data);
+  
+          } catch (error) {
+            console.error('Error fetching internships data:', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
+      console.log(industryvisitsData)
+      
     const upcomingVisits = [
         {
             companyName: "ABC Corp",

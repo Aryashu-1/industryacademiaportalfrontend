@@ -1,16 +1,17 @@
 import React from 'react'
 
-const Ipcard = () => {
+const Ipcard = (props) => {
   return (
     <div>
-        <div className='bg-gray-100 rounded-xl shadow-2xl w-[250px]'>
-            <div className='m-3 p-2'>
-                <img className='h-[180px] w-[200px]  bg-gray' src="" alt="" />
+        <div className='bg-gray-100 rounded-xl mx-4 shadow-2xl w-[300px]'>
+            <div className='m-3 p-2n flex justify-center pt-4'>
+                <img className='h-[180px] w-[200px]  bg-gray' src={props.data.imageUrls[0]} alt="" />
             </div>
             <div className='p-2'>
-                <h1 className='m-1'>NAme</h1>
-                <h1 className='m-1'>Insustry Name</h1>
-                <h1 className='m-1'>Role</h1>
+                <h1 className='m-1'>{props.data.name}</h1>
+                <h1 className='m-1'>{props.data.details}</h1>
+                <h1 className='m-1 font-semibold'>email:</h1>
+                <h1 className='m-1'>{props.data.mail}</h1>
         
                 <div className='flex my-2 '>
                                             <img className='h-6 m-2' src="https://th.bing.com/th/id/OIP.t5xJJKNn9gCbzLc2q2rBBwHaHZ?w=184&h

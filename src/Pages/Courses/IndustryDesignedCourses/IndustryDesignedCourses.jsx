@@ -1,36 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import IndustryDesignedCourseCard from '../../../Components/IndustryDesignedCourseCard/IndustryDesignedCourseCard';
-
+import axios from 'axios';
 const IndustryDesignedCourses = () => {
-    const industryDesignedCourses = [
-        {
-            courseName: "Advanced Web Development",
-            industryPartner: "ABC Corp",
-            description: "Covers modern web technologies including React and Node.js."
-        },
-        {
-            courseName: "Data Science Fundamentals",
-            industryPartner: "XYZ Ltd",
-            description: "Introduction to data analysis using Python and R."
-        },
-        {
-            courseName: "Digital Marketing Strategies",
-            industryPartner: "DEF Tech",
-            description: "Comprehensive course on SEO, SEM, and social media marketing."
-        },
-        {
-            courseName: "Cybersecurity Essentials",
-            industryPartner: "GHI Solutions",
-            description: "Basics of cybersecurity including network security and cryptography."
-        },
-        {
-            courseName: "Financial Analysis and Modeling",
-            industryPartner: "JKL Innovations",
-            description: "Techniques for financial modeling and risk analysis."
-        },
-     
-    ];
+    const [industryDesignedCoursesData, setindustryDesignedCoursesData] = useState([])
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const res = await axios.get("http://localhost:8080/api/industry-designed-courses");
+            setindustryDesignedCoursesData(res.data);
+
+          } catch (error) {
+            console.error('Error fetching internships data:', error);
+          }
+        };
     
+        fetchData();
+      }, []);
+      console.log(industryDesignedCoursesData)
+   
   return (
     <div className='' >
         <div className='text-center'>
@@ -38,7 +25,7 @@ const IndustryDesignedCourses = () => {
         </div>
         
         {
-            industryDesignedCourses.map((course,index)=>(
+            industryDesignedCoursesData.map((course,index)=>(
                 <IndustryDesignedCourseCard course={course} key={index}/>
             ))
         }

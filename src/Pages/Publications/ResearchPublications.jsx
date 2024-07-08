@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ResearchPaperCard from '../../Components/ResearchPaperCard/ResearchPaperCard';
 import SearchBar from '../../Components/SearchBar/Searchbar';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 const ResearchPublications = () => {
+    const [researchPublicationsData, setresearchPublicationsData] = useState([])
+  useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const res = await axios.get("http://localhost:8080/api/publications");
+          setresearchPublicationsData(res.data);
+
+        } catch (error) {
+          console.error('Error fetching internships data:', error);
+        }
+      };
+  
+      fetchData();
+    }, []);
+    console.log(researchPublicationsData)
   const researchPublications = [
     {
         title: "Advances in Web Development Technologies",
@@ -88,8 +104,7 @@ const latestPublications =[
 ]
   return (
     <div>
-        <NavLink to={':paperid'}>
-    <div className=' mt-1 mb-2'>
+\    <div className=' mt-1 mb-2'>
         <div className='flex text-center items-center justify-center w-full'><h1 className='text-[#82001a] font-semibold text-[22px] pb-4'>Research Publications</h1></div>
         <div className=' w-full items-center'>
         
@@ -98,8 +113,14 @@ const latestPublications =[
             <div className=' p-3 w-[80%] bg-gray-100 mx-auto' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 <h1 className='text-[#82001a] font-semibold text-left  ml-4 text-[22px] p-4'>AllPublications</h1>
                 {
-                    researchPublications.map((researchPaper,index)=>(
-                        <ResearchPaperCard researchPaper={researchPaper} key={index}/>
+                    researchPublicationsData.map((researchPaper,index)=>(
+                        <div>
+
+                     
+                        <NavLink to={researchPaper._id}>
+                            <ResearchPaperCard researchPaper={researchPaper} key={index}/>
+                        </NavLink>
+                        </div>
 
                     ))
                 }
@@ -107,7 +128,7 @@ const latestPublications =[
             </div>
         </div>
     </div>
-    </NavLink>
+
 
 </div>
   )

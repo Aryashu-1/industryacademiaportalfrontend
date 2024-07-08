@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Fpcard = () => {
+const Fpcard = (props) => {
   return (
     <div>
-        <div className='bg-gray-100 rounded-xl shadow-2xl w-[250px]'>
+        <div className='bg-gray-100 rounded-xl mx-2  shadow-2xl w-[250px]'>
             <div className='m-3  p-2'>
                 <img className='h-[180px] w-[200px]  bg-gray' src="" alt="" />
             </div>
             <div className='px-2'>
-                <h1 className='m-1'>NAme</h1>
-                <h1 className='m-1'>Deparment</h1>
-                <h1 className='m-1'>Role</h1>
-                <h1><span className='font-semibold'>Room No:</span> A-102</h1>
+                <h1 className='m-1'>{props.data.name}</h1>
+                <h1 className='m-1'>{props.data.departmet}</h1>
+                <h1 className='m-1'>{props.data.role}</h1>
+                <h1><span className='font-semibold'>Room No:</span> {props.data.roomNo}</h1>
                 <div className='flex my-2  '>
                                             <img className='h-6 m-2' src="https://th.bing.com/th/id/OIP.t5xJJKNn9gCbzLc2q2rBBwHaHZ?w=184&h
                         =183&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>

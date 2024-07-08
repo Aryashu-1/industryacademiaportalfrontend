@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CollaboratoryProjectCard from '../../../Components/CollaboratoryProjectCard/CollaboratoryProjectCard';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 const IndustryCollaboratedProjects = () => {
+    const [collaboratedProjectsData, setcollaboratedProjectsData] = useState([])
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const res = await axios.get("http://localhost:8080/api/projects");
+            setcollaboratedProjectsData(res.data);
+  
+          } catch (error) {
+            console.error('Error fetching internships data:', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
+      console.log(collaboratedProjectsData)
    
     
     const collaboratedProjects = [
@@ -47,16 +63,16 @@ const IndustryCollaboratedProjects = () => {
     
   return (
     <div>
-        <NavLink to={':cprojectId'}>
+      
         <div className=' mt-1 mb-2' >
-        <div className='flex text-center items-center justify-center w-full'><h1 className='text-[#82001a] font-semibold text-[22px] pb-4'>Industry Collabarated Projects</h1></div>
+        <div className='flex text-center items-center justify-center w-full'><h1 className='text-navy-blue font-semibold text-[22px] pb-4'>Industry Collabarated Projects</h1></div>
         <div className=' w-full items-center'>
 
             <div className=' p-3 w-[90%] bg-gray-100 mx-auto' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
 
                 <div className='flex flex-wrap w-[1200px]'>
                     {
-                        collaboratedProjects.map((project,index)=>(
+                        collaboratedProjectsData.map((project,index)=>(
                             <CollaboratoryProjectCard project={project} key={index}/>
 
                         ))
@@ -68,7 +84,6 @@ const IndustryCollaboratedProjects = () => {
         </div>
     </div>
 
-        </NavLink>
       
     </div>
   )

@@ -3,11 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import StudentsStore from './Stores/StudentsStore';
+import IndustryStore from './Stores/IndustryStore';
+import IndustryPartnersStore from './Stores/IndustryPartnersStore';
+import FacultyStores from './Stores/FacultyStores';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <StudentsStore>
+      <IndustryStore>
+        <FacultyStores>
+          <IndustryPartnersStore>
+
+         
     <App />
+    </IndustryPartnersStore>
+    </FacultyStores>
+  
+    </IndustryStore>
+    </StudentsStore>
+
   </React.StrictMode>
 );
 

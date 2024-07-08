@@ -6,6 +6,7 @@ const IndustryVisitCard = (props) => {
     const [expanded,setTogglexpanded] = useState(false)
     function expansion(){
         setTogglexpanded(!expanded)
+        
     }
   return (
     <div>
