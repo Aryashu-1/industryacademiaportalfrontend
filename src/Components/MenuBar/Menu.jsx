@@ -136,7 +136,7 @@ const Menu = () => {
                       {item.items.map((subItem, subIdx) => (
                         <div key={subIdx} className='py-1'>
                           <hr className="border-1 rounded-lg mt-4 border-gray-400 my-1 w-3/4 text-sm" />
-                          <NavLink to={subItem.path} className='text-gray-200'>{subItem.label}</NavLink>
+                          <NavLink onClick={closeMenu} to={subItem.path} className='text-gray-200'>{subItem.label}</NavLink>
                         </div>
                       ))}
                     </div>

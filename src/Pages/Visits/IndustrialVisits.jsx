@@ -131,7 +131,7 @@ const IndustrialVisits = () => {
             <h1  className='text-[#82001a] text-[20px] font-semibold'>All Industry Visits</h1>
             <div className='bg-gray-100 p-4'>
                 {
-                    industrialVisits.map((industry,index)=>(
+                    industryvisitsData.map((industry,index)=>(
                         <IndustryVisitCard industry ={industry} key={index}/>
                     ))
                 }

@@ -6,15 +6,25 @@ import axios from 'axios';
 import { FacultyContext } from '../../Contexts/FacultyContext';
 import { StudentsContext } from '../../Contexts/StudentsContext';
 import { IndustryPartnersContext } from '../../Contexts/IndustryPartnersContext';
+import { IndustryContext } from '../../Contexts/IndustryContext';
+import Icard from '../../Components/Icard/Icard';
 
 const ResearchCenters = () => {
+    const [industryPartners] = useContext(IndustryPartnersContext);
+        const [students] = useContext(StudentsContext);
+        const [faculty] = useContext(FacultyContext);
+        const [industries] = useContext(IndustryContext)
+       
+        const [center, setInternshipData] = useState([]);
+        const [ip, setIp] = useState([]);
+        const [sp, setSp] = useState([]);
+        const [fp, setFp] = useState([]);
+        const [inp,setInp] = useState([])
     const [centerId, setCenterId] = useState('');
     const [selected, setSelected] = useState(false);
     const [researchCentersData, setResearchCentersData] = useState([]);
     const [selectedCenter, setSelectedCenter] = useState(null);
-    const [faculty, setFaculty] = useContext(FacultyContext);
-    const [students, setStudents] = useContext(StudentsContext);
-    const [industryPartners, setIndustryPartners] = useContext(IndustryPartnersContext);
+   
 
     useEffect(() => {
         const fetchData = async () => {
@@ -22,17 +32,7 @@ const ResearchCenters = () => {
                 const res = await axios.get("http://localhost:8080/api/research-centers");
                 setResearchCentersData(res.data);
 
-                // Example: Fetch faculty data
-                const facultyRes = await axios.get("http://localhost:8080/api/faculty-partners");
-                setFaculty(facultyRes.data);
-
-                // Example: Fetch students data
-                const studentsRes = await axios.get("http://localhost:8080/api/students");
-                setStudents(studentsRes.data);
-
-                // Example: Fetch industry partners data
-                const industryPartnersRes = await axios.get("http://localhost:8080/api/industry-partners");
-                setIndustryPartners(industryPartnersRes.data);
+                
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -42,15 +42,58 @@ const ResearchCenters = () => {
     }, []);
 
     const handleSelection = (center) => {
+        console.log(center);
+        
         setSelectedCenter(center);
         setSelected(true);
+        
+        console.log(students)
+        console.log(industryPartners)
+        console.log(faculty)
+   
+    
+
+            if (center.industryPartnerIds) {
+                const matchedIndustryPartners = center.industryPartnerIds.map(ipd => 
+                    industryPartners.find(inp => inp._id == ipd)
+                ).filter(partner => partner !== undefined); // Filter out undefined values
+                setIp(matchedIndustryPartners);
+            }
+
+            if (center.industryId) {
+                const matchedIndustryPartners = center.industryId.map(ipd => 
+                    industries.find(inp => inp._id == ipd)
+                ).filter(partner => partner !== undefined); // Filter out undefined values
+                setInp(matchedIndustryPartners);
+            }
+
+            if (center.studentId) {
+                const matchedStudentPartners = center.studentId.map(ipd => 
+                    students.find(inp => inp._id == ipd)
+                ).filter(student => student !== undefined); // Filter out undefined values
+                setSp(matchedStudentPartners);
+            }
+  
+    
+
+            if (center.facultyPartnerId) {
+                const matchedFacultyPartners = center.facultyPartnerId.map(ipd => 
+                    faculty.find(inp => inp._id == ipd)
+                ).filter(faculty => faculty !== undefined); // Filter out undefined values
+                setFp(matchedFacultyPartners);
+            }
+
+        
     };
 
     const handleClose = () => {
         setSelected(false);
         setSelectedCenter(null);
     };
-
+    
+    console.log(ip);
+    console.log(sp);
+    console.log(fp);
     return (
         <div>
             <div className='mt-1 mb-2'>
@@ -129,21 +172,28 @@ const ResearchCenters = () => {
                                     </a>
                                 </div>
                             </div>
+                            <h1 className='font-semibold text-navy-blue m-4 text-[20px]'>Industries:</h1>
+
+                            <div className='m-4 flex flex-wrap'>
+                                {inp.map((i, index) => (
+                                    <Icard data={i} key={index} />
+                                ))}
+                            </div>
                             <h1 className='font-semibold text-navy-blue m-4 text-[20px]'>Industry Partners:</h1>
                             <div className='m-4 flex flex-wrap'>
-                                {industryPartners.slice(0, 5).map((partner, index) => (
-                                    <Ipcard data={partner} key={index} />
+                                {ip.map((f, index) => (
+                                    <Ipcard data={f} key={index} />
                                 ))}
                             </div>
                             <h1 className='font-semibold text-navy-blue m-4 text-[20px]'>Faculty Partners:</h1>
                             <div className='m-4 flex flex-wrap'>
-                                {faculty.slice(0, 5).map((f, index) => (
+                                {fp.map((f, index) => (
                                     <Fpcard data={f} key={index} />
                                 ))}
                             </div>
                             <h1 className='font-semibold text-navy-blue m-4 text-[20px]'>Students:</h1>
                             <div className='m-4 flex flex-wrap'>
-                                {students.slice(0, 5).map((s, index) => (
+                                {sp.map((s, index) => (
                                     <Stcard data={s} key={index} />
                                 ))}
                             </div>

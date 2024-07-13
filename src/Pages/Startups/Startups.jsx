@@ -61,7 +61,7 @@ const Startups = () => {
             <div className='text-cneter flex justify-center'><h1 className='text-navy-blue mb-4 font-semibold text-[22px]'>STARTUP's</h1> </div>
             <div className='flex flex-wrap p-3 bg-gray-100 o' style={{ overflowY: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 {
-                    startups.map((startup,index)=>(
+                    startupsData.map((startup,index)=>(
                         <StartupCard startup={startup} key={index}/>
 
                     ))
